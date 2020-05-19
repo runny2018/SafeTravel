@@ -9,10 +9,12 @@ import {
     Button,
     PermissionsAndroid,
     TouchableOpacity,
-    ActivityIndicator
+    ActivityIndicator,
+    Alert
 } from 'react-native';
 
 import GetLocation from 'react-native-get-location'
+import Geocoder from 'react-native-geocoder';
 
 
 export default class UserLocation extends React.Component {
@@ -21,9 +23,15 @@ export default class UserLocation extends React.Component {
         this.state = {
             location: null,
             loading: false,
+            userLatitude: null,
+            userLongitude: null,
+            userCity: null,
+
         }
         this._requestLocation = this._requestLocation.bind(this)
     }
+
+
 
 
 
@@ -52,7 +60,21 @@ export default class UserLocation extends React.Component {
                         this.setState({
                             location,
                             loading: false,
+                            userLatitude: location.latitude,
+                            userLongitude: location.longitude
                         });
+
+                        var coordinates = {
+                            lat: this.state.userLatitude,
+                            lng: this.state.userLongitude
+                        };
+
+                        Geocoder.geocodePosition(coordinates).then(res => {
+                            // res is an Array of geocoding object (see below)
+                            this.setState({ userCity: res[0].locality })
+                        })
+                            .catch(err => console.log(err))
+
                     })
                     .catch(ex => {
                         const { code, message } = ex;
@@ -95,6 +117,9 @@ export default class UserLocation extends React.Component {
                     title="Get Location"
                     onPress={this._requestLocation}
                 />
+
+                <Text>{this.state.userCity}</Text>
+
 
                 {loading ? (
                     <ActivityIndicator />
