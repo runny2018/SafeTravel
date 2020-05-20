@@ -8,13 +8,14 @@ import {
   StatusBar,
 } from 'react-native';
 
-import UserLocation from './assets/components/UserLocation';
+
+import Notifications from './assets/components/Notifications';
 
 export default class App extends React.Component {
   render() {
     return (
       <View>
-        <UserLocation />
+        <Notifications />
       </View>
     )
   }
