@@ -8,14 +8,16 @@ import {
   StatusBar,
 } from 'react-native';
 
+import NationalNews from './assets/components/NationalNews';
+import UserLocation from './assets/components/UserLocation';
+import Call from './assets/components/Call';
 
-import Notifications from './assets/components/Notifications';
 
 export default class App extends React.Component {
   render() {
     return (
       <View>
-        <Notifications />
+        <NationalNews />
       </View>
     )
   }
