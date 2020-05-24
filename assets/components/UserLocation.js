@@ -16,6 +16,12 @@ import {
 import GetLocation from 'react-native-get-location'
 import Geocoder from 'react-native-geocoder';
 
+const axios = require('axios');
+
+const _fetchZone = () => {
+
+
+}
 
 export default class UserLocation extends React.Component {
     constructor(props) {
@@ -27,8 +33,12 @@ export default class UserLocation extends React.Component {
             userLongitude: null,
             userCity: null,
 
+            covidZones: []
+
         }
+
         this._requestLocation = this._requestLocation.bind(this)
+
     }
 
 
@@ -71,7 +81,11 @@ export default class UserLocation extends React.Component {
 
                         Geocoder.geocodePosition(coordinates).then(res => {
                             // res is an Array of geocoding object (see below)
+                            //console.log(res)
                             this.setState({ userCity: res[0].locality })
+
+
+
                         })
                             .catch(err => console.log(err))
 
@@ -87,15 +101,18 @@ export default class UserLocation extends React.Component {
                         }
                         if (code === 'TIMEOUT') {
                             Alert.alert('Location request timed out');
+                            if (code === 'UNAUTHORIZED') {
+                                Alert.alert('Authorization denied');
+                            }
+                            this.setState({
+
+                                location: null,
+                                loading: false,
+                            });
                         }
-                        if (code === 'UNAUTHORIZED') {
-                            Alert.alert('Authorization denied');
-                        }
-                        this.setState({
-                            location: null,
-                            loading: false,
-                        });
                     })
+
+
 
             }
             else {
@@ -107,11 +124,30 @@ export default class UserLocation extends React.Component {
         }
     }
 
+    UNSAFE_componentWillMount() {
+        axios.get('https://api.covid19india.org/zones.json')
+            .then(response => {
+
+                this.setState({ covidZones: response.data.zones })
+
+            })
+            .catch(error => {
+                // handle error
+                console.log(error);
+            })
+            .finally(function () {
+                // always executed
+            })
+    }
+
+
+
     render() {
         const { location, loading } = this.state;
 
+
         return (
-            <View>
+            <ScrollView>
                 <Button
                     disabled={loading}
                     title="Get Location"
@@ -120,16 +156,72 @@ export default class UserLocation extends React.Component {
 
                 <Text>{this.state.userCity}</Text>
 
+                {
+                    this.state.covidZones ? this.state.covidZones.map((item) =>
+                        this.state.userCity == item.district ? <Text>{item.zone}</Text> : null
+                    )
+                        :
+                        null
+                }
 
-                {loading ? (
+
+                {/*{loading ? (
                     <ActivityIndicator />
                 ) : null}
                 {location ? (
                     <Text>
                         {JSON.stringify(location, 0, 2)}
                     </Text>
-                ) : null}
-            </View>
+                ) : null}*/}
+            </ScrollView>
         )
     }
 }
+
+
+{/*
+    axios.get('https://api.covid19india.org/zones.json')
+                                .then(function (response) {
+                                    // handle success
+                                    console.log(response.data.zones);
+
+                                    response.data.zones.map((item) => {
+                                        return (
+                                            <View>
+                                                <Text>{item.district}</Text>
+                                            </View>
+                                        )
+                                    })
+                                    //console.log(covidZones)
+
+                                })
+                                .catch(function (error) {
+                                    // handle error
+                                    console.log(error);
+                                })
+                                .finally(function () {
+                                    // always executed
+                                })
+
+
+
+*/}
+
+
+{/*
+fetch('https://api.covid19india.org/zones.json', {
+            method: 'GET'
+        })
+            .then((response) => response.json())
+            .then((responseJson) => {
+                console.log(responseJson.zones);
+                return responseJson.zones.map((data) => {
+                    return (
+                        <View><Text>{data.district}</Text></View>
+                    )
+                })
+            })
+            .catch((error) => {
+                console.error(error);
+            });
+*/}

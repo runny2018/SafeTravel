@@ -1,0 +1,1353 @@
+{
+    "config": {
+        "adapter": [Function xhrAdapter
+        ],
+        "data": undefined,
+        "headers": {
+            "Accept": "application/json, text/plain, */*",
+            "Subscription-Key": "429058f92b3246ae9b8ad1cd88daee46"
+        },
+        "maxContentLength": -1,
+        "method": "get",
+        "timeout": 0,
+        "transformRequest": [
+            [Function transformRequest
+            ]
+        ],
+        "transformResponse": [
+            [Function transformResponse
+            ]
+        ],
+        "url": "https://api.smartable.ai/coronavirus/news/US",
+        "validateStatus": [Function validateStatus
+        ],
+        "xsrfCookieName": "XSRF-TOKEN",
+        "xsrfHeaderName": "X-XSRF-TOKEN"
+    },
+    "data": {
+        "location": {
+            "countryOrRegion": "United States",
+            "county": null,
+            "isoCode": "US",
+            "lat": 37.09024,
+            "long": -95.712891,
+            "provinceOrState": null
+        },
+        "news": [
+            [Object
+            ],
+            [Object
+            ],
+            [Object
+            ],
+            [Object
+            ],
+            [Object
+            ],
+            [Object
+            ],
+            [Object
+            ],
+            [Object
+            ],
+            [Object
+            ],
+            [Object
+            ],
+            [Object
+            ],
+            [Object
+            ],
+            [Object
+            ],
+            [Object
+            ],
+            [Object
+            ],
+            [Object
+            ],
+            [Object
+            ],
+            [Object
+            ],
+            [Object
+            ],
+            [Object
+            ],
+            [Object
+            ],
+            [Object
+            ],
+            [Object
+            ],
+            [Object
+            ],
+            [Object
+            ],
+            [Object
+            ],
+            [Object
+            ],
+            [Object
+            ],
+            [Object
+            ],
+            [Object
+            ]
+        ],
+        "updatedDateTime": "2020-05-22T12:45:26.9577228Z"
+    },
+    "headers": {
+        "accept-ranges": "bytes",
+        "access-control-allow-origin": "*",
+        "age": "46",
+        "cache-control": "max-age=600",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Fri, 22 May 2020 13:08:35 GMT",
+        "etag": "W/\"5ec7c9a1-c061\"",
+        "expires": "Fri, 22 May 2020 12:59:26 GMT",
+        "last-modified": "Fri, 22 May 2020 12:46:25 GMT",
+        "vary": "Accept-Encoding",
+        "via": "1.1 varnish",
+        "x-cache": "HIT",
+        "x-cache-hits": "2",
+        "x-fastly-request-id": "b9da6dfd4c43b939b644abb88f0f91d4f5b81b7b",
+        "x-github-request-id": "785A:4072:1BD2A0:1FCD32:5EC7CA56",
+        "x-proxy-cache": "MISS",
+        "x-served-by": "cache-pao17447-PAO",
+        "x-timer": "S1590152916.087138,VS0,VE0"
+    },
+    "request": {
+        "DONE": 4,
+        "HEADERS_RECEIVED": 2,
+        "LOADING": 3,
+        "OPENED": 1,
+        "UNSENT": 0,
+        "_aborted": false,
+        "_cachedResponse": undefined,
+        "_hasError": false,
+        "_headers": {
+            "accept": "application/json, text/plain, */*",
+            "subscription-key": "429058f92b3246ae9b8ad1cd88daee46"
+        },
+        "_incrementalEvents": false,
+        "_lowerCaseResponseHeaders": {
+            "accept-ranges": "bytes",
+            "access-control-allow-origin": "*",
+            "age": "46",
+            "cache-control": "max-age=600",
+            "content-type": "application/json; charset=utf-8",
+            "date": "Fri, 22 May 2020 13:08:35 GMT",
+            "etag": "W/\"5ec7c9a1-c061\"",
+            "expires": "Fri, 22 May 2020 12:59:26 GMT",
+            "last-modified": "Fri, 22 May 2020 12:46:25 GMT",
+            "vary": "Accept-Encoding",
+            "via": "1.1 varnish",
+            "x-cache": "HIT",
+            "x-cache-hits": "2",
+            "x-fastly-request-id": "b9da6dfd4c43b939b644abb88f0f91d4f5b81b7b",
+            "x-github-request-id": "785A:4072:1BD2A0:1FCD32:5EC7CA56",
+            "x-proxy-cache": "MISS",
+            "x-served-by": "cache-pao17447-PAO",
+            "x-timer": "S1590152916.087138,VS0,VE0"
+        },
+        "_method": "GET",
+        "_requestId": null,
+        "_response": "{
+  \"location\": {
+    \"long\": -95.712891,
+    \"countryOrRegion\": \"United States\",
+    \"provinceOrState\": null,
+    \"county\": null,
+    \"isoCode\": \"US\",
+    \"lat\": 37.09024
+    },
+  \"updatedDateTime\": \"2020-05-22T12:45:26.9577228Z\",
+  \"news\": [
+    {
+      \"path\": \"_news/2020-05-19-russia-looks-to-us-for-aid-as-new-coronavirus-cases-drop-to-lowest-since-may-1.md\",
+      \"title\": \"Russia Looks to U.S. for Aid as New Coronavirus Cases Drop to Lowest Since May 1\",
+      \"excerpt\": \"Patients receive treatment in an intensive care unit of the Central Clinical Hospital \\\"RZD-Medicine\\\", which delivers medical aid to people infected with the coronavirus disease (COVID-19), in Moscow,\",
+      \"heat\": 140,
+      \"tags\": [
+        \"US\"
+    ],
+      \"type\": \"article\",
+      \"webUrl\": \"https://www.usnews.com/news/world/articles/2020-05-18/russias-new-coronavirus-cases-below-10-000-for-third-day-in-a-row\",
+      \"ampWebUrl\": \"https://www.usnews.com/news/world/articles/2020-05-18/russias-new-coronavirus-cases-below-10-000-for-third-day-in-a-row?context=amp\",
+      \"cdnAmpWebUrl\": \"https://www-usnews-com.cdn.ampproject.org/c/s/www.usnews.com/news/world/articles/2020-05-18/russias-new-coronavirus-cases-below-10-000-for-third-day-in-a-row?context=amp\",
+      \"publishedDateTime\": \"2020-05-18T17:04:00-07:00\",
+      \"updatedDateTime\": null,
+      \"provider\": {
+        \"name\": \"U.S. News & World Report\",
+        \"domain\": \"usnews.com\",
+        \"images\": null,
+        \"publishers\": null,
+        \"authors\": null
+},
+      \"images\": null,
+      \"locale\": \"en-us\",
+      \"categories\": [
+        \"news\"
+],
+      \"topics\": [
+        \"New Cases\",
+        \"Coronavirus\",
+        \"Coronavirus in US\"
+]
+},
+{
+      \"path\": \"_news/2020-05-19-santa-barbara-co-reports-22-new-cases-of-covid-19.md\",
+      \"title\": \"Santa Barbara Co. reports 22 new cases of COVID-19\",
+      \"excerpt\": \"Santa Barbara County is reporting 22 new cases of COVID-19 on Monday, bringing the county's total to 1,496 cases as of May 18 ... County Supervisor Gregg Hart said Monday that county health officials have been negotiating with the California Department of Public Health to provide greater flexibility to allow more businesses to reopen.\",      \"heat\": 150,
+      \"tags\": [
+        \"US\"
+],
+      \"type\": \"article\",
+      \"webUrl\": \"https://www.ksby.com/news/coronavirus/santa-barbara-co-reports-22-new-cases-of-covid-19\",
+      \"ampWebUrl\": \"https://www.ksby.com/news/coronavirus/santa-barbara-co-reports-22-new-cases-of-covid-19?_amp=true\",
+      \"cdnAmpWebUrl\": \"https://www-ksby-com.cdn.ampproject.org/c/s/www.ksby.com/news/coronavirus/santa-barbara-co-reports-22-new-cases-of-covid-19?_amp=true\",
+      \"publishedDateTime\": \"2020-05-18T17:03:00-07:00\",
+      \"updatedDateTime\": null,
+      \"provider\": {
+        \"name\": \"KSBY 6\",
+        \"domain\": \"ksby.com\",
+        \"images\": null,
+        \"publishers\": null,
+        \"authors\": null
+},
+      \"images\": [
+        {
+          \"url\": \"https://ewscripps.brightspotcdn.com/dims4/default/b95dd58/2147483647/strip/true/crop/1280x720+0+0/resize/1280x720!/quality/90/?url=https%3A%2F%2Fewscripps.brightspotcdn.com%2Fad%2F62%2F807bfdde4bdbb9d7a1937834ad36%2Fcoronavirus.jpg\",
+          \"width\": 1280,
+          \"height\": 720,
+          \"title\": \"Santa Barbara Co. reports 22 new cases of COVID-19\",
+          \"attribution\": null
+}
+],
+      \"locale\": \"en-us\",
+      \"categories\": [
+        \"news\"
+],
+      \"topics\": [
+        \"Coronavirus in US\",
+        \"Coronavirus\",
+        \"New Cases\"
+]
+},
+{
+      \"path\": \"_news/2020-05-18-trump-says-hes-taking-hydroxychloroquine-to-prevent-coronavirus.md\",
+      \"title\": \"Trump says he’s taking hydroxychloroquine to prevent coronavirus\",
+      \"excerpt\": \"President Trump said that he has been taking hydroxychloroquine, an unproven treatment for COVID-19, for the past week and a half.\",
+      \"heat\": 165,
+      \"tags\": [
+        \"US\"
+],
+      \"type\": \"article\",
+      \"webUrl\": \"https://www.nbcnews.com/nightly-news/video/trump-says-he-s-taking-hydroxychloroquine-to-prevent-coronavirus-83614789805\",
+      \"ampWebUrl\": \"https://www.nbcnews.com/news/amp-video/mmvo83614789805\",
+      \"cdnAmpWebUrl\": \"https://www-nbcnews-com.cdn.ampproject.org/c/s/www.nbcnews.com/news/amp-video/mmvo83614789805\",
+      \"publishedDateTime\": \"2020-05-18T15:53:00-07:00\",
+      \"updatedDateTime\": null,
+      \"provider\": {
+        \"name\": \"NBC News\",
+        \"domain\": \"nbcnews.com\",
+        \"images\": null,
+        \"publishers\": null,
+        \"authors\": null
+},
+      \"images\": [
+        {
+          \"url\": \"https://media13.s-nbcnews.com/j/MSNBC/Components/Video/202005/nn_kwe_trump_obama_200518_1589849217589.nbcnews-fp-1200-630.jpg\",
+          \"width\": 1200,
+          \"height\": 630,
+          \"title\": \"Trump says he’s taking hydroxychloroquine to prevent coronavirus\",
+          \"attribution\": null
+}
+],
+      \"locale\": \"en-us\",
+      \"categories\": [
+        \"news\"
+],
+      \"topics\": [
+        \"Coronavirus in US\",
+        \"Coronavirus\"
+]
+},
+{
+      \"path\": \"_news/2020-05-18-china-pledges-2-billion-to-fight-coronavirus-as-donald-trump-threatens-to-cut-who-funding-permanently.md\",
+      \"title\": \"China Pledges $2 Billion to Fight Coronavirus as Donald Trump Threatens to Cut WHO Funding Permanently\",
+      \"excerpt\": \"The United States and China have feuded over the World Health Organization's role in battling the novel coronavirus, with President Donald Trump criticizing the WHO and Chinese counterpart Xi Jinping praising the agency.\",
+      \"heat\": 139,
+      \"tags\": [
+        \"CN\",
+        \"CN-HB\",
+        \"US\"
+],
+      \"type\": \"article\",
+      \"webUrl\": \"https://www.newsweek.com/china-pledges-2-billion-fight-coronavirus-donald-trump-threatens-cut-who-funding-permanently-1504919\",
+      \"ampWebUrl\": \"https://www.newsweek.com/china-pledges-2-billion-fight-coronavirus-donald-trump-threatens-cut-who-funding-permanently-1504919?amp=1\",
+      \"cdnAmpWebUrl\": \"https://www-newsweek-com.cdn.ampproject.org/c/s/www.newsweek.com/china-pledges-2-billion-fight-coronavirus-donald-trump-threatens-cut-who-funding-permanently-1504919?amp=1\",
+      \"publishedDateTime\": \"2020-05-18T15:09:00-07:00\",
+      \"updatedDateTime\": null,
+      \"provider\": {
+        \"name\": \"Newsweek\",
+        \"domain\": \"newsweek.com\",
+        \"images\": null,
+        \"publishers\": null,
+        \"authors\": null
+},
+      \"images\": [
+        {
+          \"url\": \"https://d.newsweek.com/en/full/1591435/china-xi-jinping-beijing-speech-who.jpg\",
+          \"width\": 2500,
+          \"height\": 1667,
+          \"title\": \"China Pledges $2 Billion to Fight Coronavirus as Donald Trump Threatens to Cut WHO Funding Permanently\",
+          \"attribution\": null
+}
+],
+      \"locale\": \"en-us\",
+      \"categories\": [
+        \"news\"
+],
+      \"topics\": [
+        \"Coronavirus in China\",
+        \"Coronavirus in Asia\",
+        \"Coronavirus\",
+        \"Coronavirus in US\"
+]
+},
+{
+      \"path\": \"_news/2020-05-18-coronavirus-live-updates-trump-says-he-takes-drug-against-covid-19-theres-no-proof-it-works.md\",
+      \"title\": \"Coronavirus Live Updates: Trump Says He Takes Drug Against Covid-19. There’s No Proof It Works.\",
+      \"excerpt\": \"The U.S. health secretary castigates the W.H.O. at a global conference. Autoworkers return to plants in Michigan, and more states move toward reopening. Undocumented immigrants in California can begin applying for aid.\",
+      \"heat\": 108,
+      \"tags\": [
+        \"US\"
+],
+      \"type\": \"article\",
+      \"webUrl\": \"https://www.nytimes.com/2020/05/18/us/coronavirus-updates.html\",
+      \"ampWebUrl\": \"https://www.nytimes.com/2020/05/18/us/coronavirus-updates.amp.html\",
+      \"cdnAmpWebUrl\": \"https://www-nytimes-com.cdn.ampproject.org/c/s/www.nytimes.com/2020/05/18/us/coronavirus-updates.amp.html\",
+      \"publishedDateTime\": \"2020-05-18T14:55:00-07:00\",
+      \"updatedDateTime\": null,
+      \"provider\": {
+        \"name\": \"New York Times\",
+        \"domain\": \"nytimes.com\",
+        \"images\": null,
+        \"publishers\": null,
+        \"authors\": null
+},
+      \"images\": [
+        {
+          \"url\": \"https://www.nytimes.com/newsgraphics/2020/04/09/corona-virus-social-images-by-section/assets/US_promo.jpg?u=1589847004031\",
+          \"width\": 1050,
+          \"height\": 549,
+          \"title\": \"Coronavirus Live Updates: Trump Says He Takes Drug Against Covid-19. There’s No Proof It Works.\",
+          \"attribution\": null
+}
+],
+      \"locale\": \"en-us\",
+      \"categories\": [
+        \"news\"
+],
+      \"topics\": [
+        \"Coronavirus in US\",
+        \"Coronavirus\"
+]
+},
+{
+      \"path\": \"_news/2020-05-18-no-new-cases-of-covid-19-state-total-remains-at-640.md\",
+      \"title\": \"No new cases of COVID-19. State total remains at 640\",
+      \"excerpt\": \"The Department of Health reported no new cases of COVID-19 today for the state. The total is still 640. Of the 640 total positive tests, 49 are still active cases. The DOH\",
+      \"heat\": 150,
+      \"tags\": [
+        \"US\"
+],
+      \"type\": \"article\",
+      \"webUrl\": \"https://www.khon2.com/coronavirus/no-new-cases-of-covid-19-state-total-remains-at-640/\",
+      \"ampWebUrl\": \"https://www.khon2.com/coronavirus/no-new-cases-of-covid-19-state-total-remains-at-640/amp/\",
+      \"cdnAmpWebUrl\": \"https://www-khon2-com.cdn.ampproject.org/c/s/www.khon2.com/coronavirus/no-new-cases-of-covid-19-state-total-remains-at-640/amp/\",
+      \"publishedDateTime\": \"2020-05-18T14:52:00-07:00\",
+      \"updatedDateTime\": null,
+      \"provider\": {
+        \"name\": \"KHON2\",
+        \"domain\": \"khon2.com\",
+        \"images\": null,
+        \"publishers\": null,
+        \"authors\": null
+},
+      \"images\": [
+        {
+          \"url\": \"https://www.khon2.com/wp-content/uploads/sites/8/2020/04/thumbnail_Coronavirus-Update-1-2-2-2-3-2-1-5-1-1.jpg?w=1280&h=720&crop=1\",
+          \"width\": 1280,
+          \"height\": 720,
+          \"title\": \"No new cases of COVID-19. State total remains at 640\",
+          \"attribution\": null
+}
+],
+      \"locale\": \"en-us\",
+      \"categories\": [
+        \"news\"
+],
+      \"topics\": [
+        \"Coronavirus in US\",
+        \"Coronavirus\",
+        \"New Cases\"
+]
+},
+{
+      \"path\": \"_news/2020-05-18-indiana-gets-first-case-of-mysterious-coronavirus-linked-illness-that-targets-children.md\",
+      \"title\": \"Indiana gets first case of mysterious coronavirus-linked illness that targets children\",
+      \"excerpt\": \"Last week the Centers for Disease Control and Prevention alerted doctors to watch for cases of multisystem inflammatory syndrome in child.\",
+      \"heat\": 117,
+      \"tags\": [
+        \"US\",
+        \"US-IN\"
+],
+      \"type\": \"article\",
+      \"webUrl\": \"https://www.indystar.com/story/news/health/2020/05/18/indiana-coronavirus-state-gets-first-case-mysterious-mis-c-illness/5216303002/\",
+      \"ampWebUrl\": null,
+      \"cdnAmpWebUrl\": null,
+      \"publishedDateTime\": \"2020-05-18T14:18:00-07:00\",
+      \"updatedDateTime\": null,
+      \"provider\": {
+        \"name\": \"Indianapolis Star\",
+        \"domain\": \"indystar.com\",
+        \"images\": null,
+        \"publishers\": null,
+        \"authors\": null
+},
+      \"images\": [
+        {
+          \"url\": \"https://www.gannett-cdn.com/presto/2020/03/20/PNAS/0047a4a0-d38e-4941-9069-5c68993a7256-Coronavirus.jpg?crop=3059,1721,x0,y119&width=3059&height=1721&format=pjpg&auto=webp\",
+          \"width\": 3059,
+          \"height\": 1721,
+          \"title\": \"Indiana gets first case of mysterious coronavirus-linked illness that targets children\",
+          \"attribution\": null
+}
+],
+      \"locale\": \"en-us\",
+      \"categories\": [
+        \"news\"
+],
+      \"topics\": [
+        \"Coronavirus in US\",
+        \"Coronavirus\",
+        \"New Cases\"
+]
+},
+{
+      \"path\": \"_news/2020-05-18-photos-show-people-dining-out-shopping-and-getting-their-hair-cut-as-texas-reports-an-influx-of-new-coronavirus-cases.md\",
+      \"title\": \"Photos show people dining out, shopping, and getting their hair cut as Texas reports an influx of new coronavirus cases\",
+      \"excerpt\": \"On May 18, offices and gyms in Texas joined the state's salons, restaurants, and shopping malls that have been allowed to reopen at limited capacity.\",
+      \"heat\": 141,
+      \"tags\": [
+        \"US\"
+],
+      \"type\": \"article\",
+      \"webUrl\": \"https://www.businessinsider.com/texas-reopening-photos-as-coronavirus-cases-rise-through-state-2020-5\",
+      \"ampWebUrl\": \"https://www.businessinsider.com/texas-reopening-photos-as-coronavirus-cases-rise-through-state-2020-5?amp\",
+      \"cdnAmpWebUrl\": \"https://www-businessinsider-com.cdn.ampproject.org/c/s/www.businessinsider.com/texas-reopening-photos-as-coronavirus-cases-rise-through-state-2020-5?amp\",
+      \"publishedDateTime\": \"2020-05-18T14:00:00-07:00\",
+      \"updatedDateTime\": null,
+      \"provider\": {
+        \"name\": \"Business Insider\",
+        \"domain\": \"businessinsider.com\",
+        \"images\": null,
+        \"publishers\": null,
+        \"authors\": null
+},
+      \"images\": [
+        {
+          \"url\": \"https://i.insider.com/5ec2c9b4191824724b0e80cb?width=1200&format=jpeg\",
+          \"width\": 1200,
+          \"height\": 600,
+          \"title\": \"Photos show people dining out, shopping, and getting their hair cut as Texas reports an influx of new coronavirus cases\",
+          \"attribution\": null
+}
+],
+      \"locale\": \"en-us\",
+      \"categories\": [
+        \"news\"
+],
+      \"topics\": [
+        \"Coronavirus in US\",
+        \"Coronavirus\",
+        \"New Cases\"
+]
+},
+{
+      \"path\": \"_news/2020-05-18-oha-reports-62-new-coronavirus-cases.md\",
+      \"title\": \"OHA reports 62 new coronavirus cases\",
+      \"excerpt\": \"Lane County Public Health’s update on Monday showed five new cases for the county, all in the Eugene-Springfield area. The state total of cases is 3,687. OHA said one more death\",
+      \"heat\": 135,
+      \"tags\": [
+        \"US\"
+],
+      \"type\": \"article\",
+      \"webUrl\": \"https://www.kezi.com/content/news/OHA-reports-62-new-coronavirus-cases-570569691.html\",
+      \"ampWebUrl\": \"http://www.kezi.com/templates/AMP?contentID=570569691\",
+      \"cdnAmpWebUrl\": \"https://www-kezi-com.cdn.ampproject.org/c/www.kezi.com/templates/AMP?contentID=570569691\",
+      \"publishedDateTime\": \"2020-05-18T13:36:00-07:00\",
+      \"updatedDateTime\": null,
+      \"provider\": {
+        \"name\": \"KEZI\",
+        \"domain\": \"kezi.com\",
+        \"images\": null,
+        \"publishers\": null,
+        \"authors\": null
+},
+      \"images\": [
+        {
+          \"url\": \"http://media.heartlandtv.com/images/oregon+coronavirus4.jpg\",
+          \"width\": 640,
+          \"height\": 360,
+          \"title\": \"OHA reports 62 new coronavirus cases\",
+          \"attribution\": null
+}
+],
+      \"locale\": \"en-us\",
+      \"categories\": [
+        \"news\"
+],
+      \"topics\": [
+        \"Coronavirus in US\",
+        \"Coronavirus\",
+        \"New Cases\"
+]
+},
+{
+      \"path\": \"_news/2020-05-18-trump-is-using-the-coronavirus-as-a-cover-to-abuse-his-authority.md\",
+      \"title\": \"Trump is using the coronavirus as a cover to abuse his authority\",
+      \"excerpt\": \"President Trump is not letting the coronavirus crisis go to waste. He is using the cover of the pandemic to punish the helpless, take revenge on his enemies, reward his supporters, eliminate checks on his authority and generally implement his monarchical view of presidential power.\",
+      \"heat\": 105,
+      \"tags\": [
+        \"US\"
+],
+      \"type\": \"article\",
+      \"webUrl\": \"https://www.washingtonpost.com/opinions/2020/05/18/trump-is-using-coronavirus-cover-abuse-his-authority/\",
+      \"ampWebUrl\": \"https://www.washingtonpost.com/opinions/2020/05/18/trump-is-using-coronavirus-cover-abuse-his-authority/?outputType=amp\",
+      \"cdnAmpWebUrl\": \"https://www-washingtonpost-com.cdn.ampproject.org/c/s/www.washingtonpost.com/opinions/2020/05/18/trump-is-using-coronavirus-cover-abuse-his-authority/?outputType=amp\",
+      \"publishedDateTime\": \"2020-05-18T13:17:00-07:00\",
+      \"updatedDateTime\": null,
+      \"provider\": {
+        \"name\": \"Washington Post\",
+        \"domain\": \"washingtonpost.com\",
+        \"images\": null,
+        \"publishers\": null,
+        \"authors\": null
+},
+      \"images\": [
+        {
+          \"url\": \"https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/SNEC4IEZFUI6VLLZ5334242GIE.jpg&w=1440\",
+          \"width\": 1440,
+          \"height\": 960,
+          \"title\": \"Trump is using the coronavirus as a cover to abuse his authority\",
+          \"attribution\": null
+}
+],
+      \"locale\": \"en-us\",
+      \"categories\": [
+        \"news\"
+],
+      \"topics\": [
+        \"Coronavirus in US\",
+        \"Coronavirus\"
+]
+},
+{
+      \"path\": \"_news/2020-05-18-1-new-death-62-new-cases-of-covid-19-in-oregon.md\",
+      \"title\": \"1 new death, 62 new cases of COVID-19 in Oregon\",
+      \"excerpt\": \"The Oregon Health Authority confirmed one new death related to the coronavirus Monday, putting the state’s death toll at 138.\",
+      \"heat\": 160,
+      \"tags\": [
+        \"US\"
+],
+      \"type\": \"article\",
+      \"webUrl\": \"https://www.koin.com/news/health/coronavirus/1-new-death-62-new-cases-of-covid-19-in-oregon/\",
+      \"ampWebUrl\": \"https://www.koin.com/news/health/coronavirus/1-new-death-62-new-cases-of-covid-19-in-oregon/amp/\",
+      \"cdnAmpWebUrl\": \"https://www-koin-com.cdn.ampproject.org/c/s/www.koin.com/news/health/coronavirus/1-new-death-62-new-cases-of-covid-19-in-oregon/amp/\",
+      \"publishedDateTime\": \"2020-05-18T12:27:00-07:00\",
+      \"updatedDateTime\": null,
+      \"provider\": {
+        \"name\": \"KOIN 6\",
+        \"domain\": \"koin.com\",
+        \"images\": null,
+        \"publishers\": null,
+        \"authors\": null
+},
+      \"images\": [
+        {
+          \"url\": \"https://www.koin.com/wp-content/uploads/sites/10/2020/05/2e719b0636bf4b0386a7b75d960f49cc-1-2-1-1-1-1-1.jpg?w=1280&h=720&crop=1\",
+          \"width\": 1280,
+          \"height\": 720,
+          \"title\": \"1 new death, 62 new cases of COVID-19 in Oregon\",
+          \"attribution\": null
+}
+],
+      \"locale\": \"en-us\",
+      \"categories\": [
+        \"news\"
+],
+      \"topics\": [
+        \"Coronavirus in US\",
+        \"Coronavirus\",
+        \"New Cases\"
+]
+},
+{
+      \"path\": \"_news/2020-05-18-maine-expands-access-to-tests-as-state-reports-26-new-coronavirus-cases-and-1-additional-death.md\",
+      \"title\": \"Maine expands access to tests as state reports 26 new coronavirus cases and 1 additional death\",
+      \"excerpt\": \"Gov. Janet Mills is expected to join Maine CDC's Dr. Nirav Shah at 2 p.m. on Monday as the state ramps up testing capacity but continues to see an uptick in COVID-19 cases.\",
+      \"heat\": 103,
+      \"tags\": [
+        \"US\",
+        \"US-ME\"
+],
+      \"type\": \"article\",
+      \"webUrl\": \"https://www.pressherald.com/2020/05/18/an-additional-26-coronavirus-cases-1-death-reported-in-maine/\",
+      \"ampWebUrl\": null,
+      \"cdnAmpWebUrl\": null,
+      \"publishedDateTime\": \"2020-05-18T12:03:00-07:00\",
+      \"updatedDateTime\": null,
+      \"provider\": {
+        \"name\": \"Portland Press Herald\",
+        \"domain\": \"pressherald.com\",
+        \"images\": null,
+        \"publishers\": null,
+        \"authors\": null
+},
+      \"images\": [
+        {
+          \"url\": \"https://multifiles.pressherald.com/uploads/sites/10/2020/05/20200518_CoronavirusFeatures_0086-1024x683.jpg\",
+          \"width\": 1024,
+          \"height\": 683,
+          \"title\": \"Maine expands access to tests as state reports 26 new coronavirus cases and 1 additional death\",          \"attribution\": null
+}
+],
+      \"locale\": \"en-us\",
+      \"categories\": [
+        \"news\"
+],
+      \"topics\": [
+        \"Coronavirus in US\",
+        \"Coronavirus\",
+        \"New Cases\"
+]
+},
+{
+      \"path\": \"_news/2020-05-18-texas-sees-steady-increase-in-new-coronavirus-cases-after-reopening.md\",
+      \"title\": \"Texas sees steady increase in new coronavirus cases after reopening\",
+      \"excerpt\": \"Texas Gov. Greg Abbott issued an executive order March 31 that told Texans to stay home in April except for essential activity. On May 1, that order expired and Abbott announced his formal reopening plan,\",
+      \"heat\": 135,
+      \"tags\": [
+        \"US\"
+],
+      \"type\": \"article\",
+      \"webUrl\": \"https://www.rawstory.com/2020/05/texas-sees-steady-increase-in-new-coronavirus-cases-after-reopening/\",
+      \"ampWebUrl\": \"https://www.rawstory.com/2020/05/texas-sees-steady-increase-in-new-coronavirus-cases-after-reopening/amp/\",
+      \"cdnAmpWebUrl\": \"https://www-rawstory-com.cdn.ampproject.org/c/s/www.rawstory.com/2020/05/texas-sees-steady-increase-in-new-coronavirus-cases-after-reopening/amp/\",
+      \"publishedDateTime\": \"2020-05-18T11:27:00-07:00\",
+      \"updatedDateTime\": null,
+      \"provider\": {
+        \"name\": \"The Raw Story\",
+        \"domain\": \"rawstory.com\",
+        \"images\": null,
+        \"publishers\": null,
+        \"authors\": null
+},
+      \"images\": [
+        {
+          \"url\": \"https://www.rawstory.com/wp-content/uploads/2020/04/shutterstock_1679445391-645x430.jpg\",
+          \"width\": 645,
+          \"height\": 430,
+          \"title\": \"Texas sees steady increase in new coronavirus cases after reopening\",
+          \"attribution\": null
+}
+],
+      \"locale\": \"en-us\",
+      \"categories\": [
+        \"news\"
+],
+      \"topics\": [
+        \"Coronavirus in US\",
+        \"Coronavirus\",
+        \"New Cases\"
+]
+},
+{
+      \"path\": \"_news/2020-05-18-dallas-county-reports-another-coronavirus-death-224-new-cases.md\",
+      \"title\": \"Dallas County reports another coronavirus death, 224 new cases\",
+      \"excerpt\": \"Dallas County reported 224 more positive coronavirus cases on Monday and one more death. The most recent death was a Grand Prairie man in his 60s. He\",
+      \"heat\": 150,
+      \"tags\": [
+        \"US\"
+],
+      \"type\": \"article\",
+      \"webUrl\": \"https://www.dallasnews.com/news/public-health/2020/05/18/dallas-county-reports-another-coronavirus-death-224-new-cases/\",
+      \"ampWebUrl\": \"https://www.dallasnews.com/news/public-health/2020/05/18/dallas-county-reports-another-coronavirus-death-224-new-cases/?outputType=amp\",
+      \"cdnAmpWebUrl\": \"https://www-dallasnews-com.cdn.ampproject.org/c/s/www.dallasnews.com/news/public-health/2020/05/18/dallas-county-reports-another-coronavirus-death-224-new-cases/?outputType=amp\",
+      \"publishedDateTime\": \"2020-05-18T10:32:00-07:00\",
+      \"updatedDateTime\": null,
+      \"provider\": {
+        \"name\": \"Dallas Morning News\",
+        \"domain\": \"dallasnews.com\",
+        \"images\": null,
+        \"publishers\": null,
+        \"authors\": null
+},
+      \"images\": [
+        {
+          \"url\": \"https://dmn-dallas-news-prod.cdn.arcpublishing.com/resizer/9C-wjcMvRb0uXsGCK5SEJnu4Qco=/1660x934/smart/filters:no_upscale()/cloudfront-us-east-1.images.arcpublishing.com/dmn/UWUPAUCEWJHXVMBPWNUTNAHFPA.JPG\",
+          \"width\": 1660,
+          \"height\": 934,
+          \"title\": \"Dallas County reports another coronavirus death, 224 new cases\",
+          \"attribution\": null
+}
+],
+      \"locale\": \"en-us\",
+      \"categories\": [
+        \"news\"
+],
+      \"topics\": [
+        \"Coronavirus in US\",
+        \"Coronavirus\",
+        \"New Cases\"
+]
+},
+{
+      \"path\": \"_news/2020-05-18-136-new-coronavirus-cases-in-mississippi-11432-total-cases-with-528-deaths.md\",
+      \"title\": \"136 new coronavirus cases in Mississippi; 11,432 total cases with 528 deaths\",
+      \"excerpt\": \"The Mississippi State Department of Health is reporting 136 new cases of the coronavirus (COVID-19) in Mississippi. That brings the state’s total number of\",
+      \"heat\": 132,
+      \"tags\": [
+        \"US\"
+],
+      \"type\": \"article\",
+      \"webUrl\": \"https://www.wjtv.com/health/coronavirus/136-new-coronavirus-cases-in-mississippi-11432-total-cases-with-528-deaths/\",
+      \"ampWebUrl\": \"https://www.wjtv.com/health/coronavirus/136-new-coronavirus-cases-in-mississippi-11432-total-cases-with-528-deaths/amp/\",
+      \"cdnAmpWebUrl\": \"https://www-wjtv-com.cdn.ampproject.org/c/s/www.wjtv.com/health/coronavirus/136-new-coronavirus-cases-in-mississippi-11432-total-cases-with-528-deaths/amp/\",
+      \"publishedDateTime\": \"2020-05-18T09:13:00-07:00\",
+      \"updatedDateTime\": null,
+      \"provider\": {
+        \"name\": \"WJTV\",
+        \"domain\": \"wjtv.com\",
+        \"images\": null,
+        \"publishers\": null,
+        \"authors\": null
+},
+      \"images\": [
+        {
+          \"url\": \"https://www.wjtv.com/wp-content/uploads/sites/72/2020/05/thumbnail_Coronavirus-Update-1-2-2-2-3-2-1-5-1-1.jpg?w=1280&h=720&crop=1\",
+          \"width\": 1280,
+          \"height\": 720,
+          \"title\": \"136 new coronavirus cases in Mississippi; 11,432 total cases with 528 deaths\",
+          \"attribution\": null
+}
+],
+      \"locale\": \"en-us\",
+      \"categories\": [
+        \"news\"
+],
+      \"topics\": [
+        \"Coronavirus in US\",
+        \"Coronavirus\",
+        \"New Cases\"
+]
+},
+{
+      \"path\": \"_news/2020-05-18-trump-administration-ready-for-more-coronavirus-aid-if-needed-hassett.md\",
+      \"title\": \"Trump administration ready for more coronavirus aid if needed: Hassett\",
+      \"excerpt\": \"The Trump administration is prepared to take further steps if needed to shore up the nation's economy during the novel coronavirus outbreak, but any final action will not look like House Democrats' proposed legislation,\",
+      \"heat\": 105,
+      \"tags\": [
+        \"US\"
+],
+      \"type\": \"article\",
+      \"webUrl\": \"https://www.reuters.com/article/us-health-coronavirus-usa-congress-idUSKBN22U1QE\",
+      \"ampWebUrl\": \"https://mobile.reuters.com/article/amp/idUSKBN22U1QE\",
+      \"cdnAmpWebUrl\": \"https://mobile-reuters-com.cdn.ampproject.org/c/s/mobile.reuters.com/article/amp/idUSKBN22U1QE\",
+      \"publishedDateTime\": \"2020-05-18T05:51:00-07:00\",
+      \"updatedDateTime\": null,
+      \"provider\": {
+        \"name\": \"Reuters\",
+        \"domain\": \"reuters.com\",
+        \"images\": null,
+        \"publishers\": null,
+        \"authors\": null
+},
+      \"images\": [
+        {
+          \"url\": \"https://s2.reutersmedia.net/resources/r/?m=02&d=20200518&t=2&i=1519018463&w=&fh=545px&fw=&ll=&pl=&sq=&r=LYNXMPEG4H1EB\",
+          \"width\": 813,
+          \"height\": 545,
+          \"title\": \"Trump administration ready for more coronavirus aid if needed: Hassett\",
+          \"attribution\": null
+}
+],
+      \"locale\": \"en-us\",
+      \"categories\": [
+        \"news\"
+],
+      \"topics\": [
+        \"Coronavirus in US\",
+        \"Coronavirus\"
+]
+},
+{
+      \"path\": \"_news/2020-05-17-oregon-9-new-coronavirus-cases-no-deaths-reported-sunday.md\",
+      \"title\": \"Oregon: 9 new coronavirus cases, no deaths reported Sunday\",
+      \"excerpt\": \"Oregon health officials confirmed nine new cases of the coronavirus Sunday with three additional presumptive cases.\",
+      \"heat\": 145,
+      \"tags\": [
+        \"US\"
+],
+      \"type\": \"article\",
+      \"webUrl\": \"https://www.koin.com/top-stories/9-new-confirmed-cases-no-new-deaths/\",
+      \"ampWebUrl\": \"https://www.koin.com/top-stories/9-new-confirmed-cases-no-new-deaths/amp/\",
+      \"cdnAmpWebUrl\": \"https://www-koin-com.cdn.ampproject.org/c/s/www.koin.com/top-stories/9-new-confirmed-cases-no-new-deaths/amp/\",
+      \"publishedDateTime\": \"2020-05-17T13:00:00-07:00\",
+      \"updatedDateTime\": null,
+      \"provider\": {
+        \"name\": \"KOIN 6\",
+        \"domain\": \"koin.com\",
+        \"images\": null,
+        \"publishers\": null,
+        \"authors\": null
+},
+      \"images\": [
+        {
+          \"url\": \"https://www.koin.com/wp-content/uploads/sites/10/2020/05/b110b90724ae4e17b0a00d1f8dc3e262.jpg?w=1280&h=720&crop=1\",
+          \"width\": 1280,
+          \"height\": 720,
+          \"title\": \"Oregon: 9 new coronavirus cases, no deaths reported Sunday\",
+          \"attribution\": null
+}
+],
+      \"locale\": \"en-us\",
+      \"categories\": [
+        \"news\"
+],
+      \"topics\": [
+        \"Coronavirus in US\",
+        \"Coronavirus\",
+        \"New Cases\"
+]
+},
+{
+      \"path\": \"_news/2020-05-16-oregon-coronavirus-updates-saturday-marion-county-again-has-the-highest-number-of-new-cases.md\",
+      \"title\": \"Oregon coronavirus updates, Saturday: Marion County again has the highest number of new cases\",
+      \"excerpt\": \"Check back on this story throughout the day for the latest news about coronavirus and its effects in Salem and around Oregon\",
+      \"heat\": 139,
+      \"tags\": [
+        \"US\"
+],
+      \"type\": \"article\",
+      \"webUrl\": \"https://www.statesmanjournal.com/story/news/2020/05/16/oregon-coronavirus-updates-saturday-keizer-honors-senior-residents/5205258002/\",
+      \"ampWebUrl\": \"https://amp.statesmanjournal.com/amp/5205258002\",
+      \"cdnAmpWebUrl\": \"https://amp-statesmanjournal-com.cdn.ampproject.org/c/s/amp.statesmanjournal.com/amp/5205258002\",
+      \"publishedDateTime\": \"2020-05-16T16:10:00-07:00\",
+      \"updatedDateTime\": null,
+      \"provider\": {
+        \"name\": \"Statesman Journal\",
+        \"domain\": \"statesmanjournal.com\",
+        \"images\": null,
+        \"publishers\": null,
+        \"authors\": null
+},
+      \"images\": [
+        {
+          \"url\": \"https://www.gannett-cdn.com/presto/2020/04/03/PSAL/9238f678-924f-4933-b178-429759925891-COVID_3D_Masks_Photo.jpg?auto=webp&crop=931,524,x0,y0&format=pjpg&width=1200\",
+          \"width\": 1200,
+          \"height\": 675,
+          \"title\": \"Oregon coronavirus updates, Saturday: Marion County again has the highest number of new cases\",
+          \"attribution\": null
+}
+],
+      \"locale\": \"en-us\",
+      \"categories\": [
+        \"news\"
+],
+      \"topics\": [
+        \"Coronavirus in US\",
+        \"Coronavirus\",
+        \"New Cases\"
+]
+},
+{
+      \"path\": \"_news/2020-05-16-saturday-updates-oregon-health-authority-confirms-64-new-coronavirus-cases.md\",
+      \"title\": \"Saturday Updates: Oregon Health Authority Confirms 64 New Coronavirus Cases\",
+      \"excerpt\": \"The Oregon Health Authority Saturday confirmed 64 new coronavirus cases in the state. The state’s total number of known positive and presumptive cases is 3,612. Presumptive cases are people who have not tested positive but have COVID-19 symptoms and have had close contact with someone confirmed to be infected with the virus.\",
+      \"heat\": 113,
+      \"tags\": [
+        \"US\"
+],
+      \"type\": \"article\",
+      \"webUrl\": \"https://www.opb.org/news/article/live-updates-oregon-washington-coronavirus-covid-19-may-16/\",
+      \"ampWebUrl\": null,
+      \"cdnAmpWebUrl\": null,
+      \"publishedDateTime\": \"2020-05-16T07:43:00-07:00\",
+      \"updatedDateTime\": null,
+      \"provider\": {
+        \"name\": \"OPB\",
+        \"domain\": \"opb.org\",
+        \"images\": null,
+        \"publishers\": null,
+        \"authors\": null
+},
+      \"images\": [
+        {
+          \"url\": \"https://images5.opb.org/c_fill%2Ch_300%2Cq_90%2Cw_400/radio_tol-image-gavel2jpg.jpg\",
+          \"width\": 400,
+          \"height\": 300,
+          \"title\": \"Saturday Updates: Oregon Health Authority Confirms 64 New Coronavirus Cases\",
+          \"attribution\": null
+}
+],
+      \"locale\": \"en-us\",
+      \"categories\": [
+        \"news\"
+],
+      \"topics\": [
+        \"Coronavirus in US\",
+        \"Coronavirus\",
+        \"New Cases\"
+]
+},
+{
+      \"path\": \"_news/2020-05-16-three-new-cases-of-covid-19-reported-in-mckinney-on-may-15.md\",
+      \"title\": \"Three new cases of COVID-19 reported in McKinney on May 15\",
+      \"excerpt\": \"Collin County health officials reported COVID-19 in Collin County on May 15. The tally includes 14 new cases and one case was previously thought to be out-of-county but was confirmed otherwise, according to Collin County officials.\",
+      \"heat\": 130,
+      \"tags\": [
+        \"US\"
+],
+      \"type\": \"article\",
+      \"webUrl\": \"https://communityimpact.com/dallas-fort-worth/mckinney/coronavirus/2020/05/15/three-new-cases-of-covid-19-reported-in-mckinney-on-may-15/\",
+      \"ampWebUrl\": null,
+      \"cdnAmpWebUrl\": null,
+      \"publishedDateTime\": \"2020-05-15T20:56:00-07:00\",
+      \"updatedDateTime\": null,
+      \"provider\": {
+        \"name\": \"Community Impact Newspaper\",
+        \"domain\": \"communityimpact.com\",
+        \"images\": null,
+        \"publishers\": null,
+        \"authors\": null
+},
+      \"images\": [
+        {
+          \"url\": \"https://communityimpact.com/theme_community_impact/images/DigitalAd-1.jpg\",
+          \"width\": 330,
+          \"height\": 330,
+          \"title\": \"Three new cases of COVID-19 reported in McKinney on May 15\",
+          \"attribution\": null
+}
+],
+      \"locale\": \"en-us\",
+      \"categories\": [
+        \"news\"
+],
+      \"topics\": [
+        \"Coronavirus in US\",
+        \"Coronavirus\",
+        \"New Cases\"
+]
+},
+{
+      \"path\": \"_news/2020-05-16-san-mateo-county-reports-39-new-coronavirus-cases-no-deaths.md\",
+      \"title\": \"San Mateo County Reports 39 New Coronavirus Cases, No Deaths\",
+      \"excerpt\": \"San Mateo County Health reported 39 additional cases of the new coronavirus Friday. The latest report brings the countywide total of COVID-19 cases to 1,575. The county reported no additional coronavirus-related fatalities,\",
+      \"heat\": 145,
+      \"tags\": [
+        \"US\"
+],
+      \"type\": \"article\",
+      \"webUrl\": \"https://patch.com/california/sanmateo/san-mateo-county-reports-39-new-coronavirus-cases-no-deaths\",      \"ampWebUrl\": \"https://patch.com/california/sanmateo/amp/28749129/san-mateo-county-reports-39-new-coronavirus-cases-no-deaths\",
+      \"cdnAmpWebUrl\": \"https://patch-com.cdn.ampproject.org/c/s/patch.com/california/sanmateo/amp/28749129/san-mateo-county-reports-39-new-coronavirus-cases-no-deaths\",
+      \"publishedDateTime\": \"2020-05-15T19:36:00-07:00\",
+      \"updatedDateTime\": null,
+      \"provider\": {
+        \"name\": \"Patch\",
+        \"domain\": \"patch.com\",
+        \"images\": null,
+        \"publishers\": null,
+        \"authors\": null
+},
+      \"images\": [
+        {
+          \"url\": \"https://patch.com/img/cdn20/users/22137850/20200515/093652/styles/patch_image/public/covid-36___15213551803.jpg?width=984\",
+          \"width\": 984,
+          \"height\": 738,
+          \"title\": \"San Mateo County Reports 39 New Coronavirus Cases, No Deaths\",
+          \"attribution\": null
+}
+],
+      \"locale\": \"en-us\",
+      \"categories\": [
+        \"news\"
+],
+      \"topics\": [
+        \"Coronavirus in US\",
+        \"Coronavirus\",
+        \"New Cases\"
+]
+},
+{
+      \"path\": \"_news/2020-05-16-santa-clara-county-reports-18-new-coronavirus-cases-1-death.md\",
+      \"title\": \"Santa Clara County Reports 18 New Coronavirus Cases, 1 Death\",
+      \"excerpt\": \"The Santa Clara County Public Health Department reported 18 additional cases of the new coronavirus Friday. The latest report brings the countywide total of COVID-19 cases to 2,403. The county reported one additional coronavirus-related fatality,\",
+      \"heat\": 145,
+      \"tags\": [
+        \"US\"
+],
+      \"type\": \"article\",
+      \"webUrl\": \"https://patch.com/california/losgatos/santa-clara-county-reports-18-new-coronavirus-cases-1-death\",      \"ampWebUrl\": \"https://patch.com/california/losgatos/amp/28749125/santa-clara-county-reports-18-new-coronavirus-cases-1-death\",
+      \"cdnAmpWebUrl\": \"https://patch-com.cdn.ampproject.org/c/s/patch.com/california/losgatos/amp/28749125/santa-clara-county-reports-18-new-coronavirus-cases-1-death\",
+      \"publishedDateTime\": \"2020-05-15T19:26:00-07:00\",
+      \"updatedDateTime\": null,
+      \"provider\": {
+        \"name\": \"Patch\",
+        \"domain\": \"patch.com\",
+        \"images\": null,
+        \"publishers\": null,
+        \"authors\": null
+},
+      \"images\": [
+        {
+          \"url\": \"https://patch.com/img/cdn20/users/22137850/20200515/092616/styles/patch_image/public/covid-36___15212547624.jpg?width=984\",
+          \"width\": 984,
+          \"height\": 738,
+          \"title\": \"Santa Clara County Reports 18 New Coronavirus Cases, 1 Death\",
+          \"attribution\": null
+}
+],
+      \"locale\": \"en-us\",
+      \"categories\": [
+        \"news\"
+],
+      \"topics\": [
+        \"Coronavirus in US\",
+        \"Coronavirus\",
+        \"New Cases\"
+]
+},
+{
+      \"path\": \"_news/2020-05-16-amarillo-covid-19-report-for-may-15-shows-734-new-cases-bringing-total-to-over-2600.md\",
+      \"title\": \"Amarillo COVID-19 report for May 15 shows 734 new cases, bringing total to over 2,600\",
+      \"excerpt\": \"When Lubbock County confirmed its first case of COVID-19 or Coronavirus, the Lubbock County Court Residential Treatment Center implemented its plans to prevent the spread of the d\",
+      \"heat\": 123,
+      \"tags\": [
+        \"US\"
+],
+      \"type\": \"article\",
+      \"webUrl\": \"https://www.kcbd.com/2020/05/15/amarillo-covid-report-may-shows-new-cases-bringing-total-over/\",
+      \"ampWebUrl\": null,
+      \"cdnAmpWebUrl\": null,
+      \"publishedDateTime\": \"2020-05-15T19:23:00-07:00\",
+      \"updatedDateTime\": null,
+      \"provider\": {
+        \"name\": \"KCBD\",
+        \"domain\": \"kcbd.com\",
+        \"images\": null,
+        \"publishers\": null,
+        \"authors\": null
+},
+      \"images\": [
+        {
+          \"url\": \"https://www.kcbd.com/resizer/JzfqN7IU2RDZz3GqpYOHEDqBOBo=/1200x0/cloudfront-us-east-1.images.arcpublishing.com/raycom/22C4KZCKUZGUDHGR5LXBHSNSKI.jpg\",
+          \"width\": 1200,
+          \"height\": 628,
+          \"title\": \"Amarillo COVID-19 report for May 15 shows 734 new cases, bringing total to over 2,600\",
+          \"attribution\": null
+}
+],
+      \"locale\": \"en-us\",
+      \"categories\": [
+        \"news\"
+],
+      \"topics\": [
+        \"Coronavirus in US\",
+        \"Coronavirus\",
+        \"New Cases\"
+]
+},
+{
+      \"path\": \"_news/2020-05-16-coronavirus-update-16-new-cases-more-on-outbreak-at-santa-paula-packing-house.md\",
+      \"title\": \"Coronavirus update: 16 new cases; more on outbreak at Santa Paula packing house\",
+      \"excerpt\": \"More details about a coronavirus outbreak at a Santa Paula packing house came out Friday, and officials announced 16 new cases countywide.\",
+      \"heat\": 146,
+      \"tags\": [
+        \"US\"
+],
+      \"type\": \"article\",
+      \"webUrl\": \"https://www.vcstar.com/story/news/local/communities/county/2020/05/15/coronavirus-update-ventura-county-cases-california-covid-19-deaths/5202135002/\",
+      \"ampWebUrl\": \"https://amp.vcstar.com/amp/5202135002\",
+      \"cdnAmpWebUrl\": \"https://amp-vcstar-com.cdn.ampproject.org/c/s/amp.vcstar.com/amp/5202135002\",
+      \"publishedDateTime\": \"2020-05-15T19:17:00-07:00\",
+      \"updatedDateTime\": null,
+      \"provider\": {
+        \"name\": \"Ventura County Star\",
+        \"domain\": \"vcstar.com\",
+        \"images\": null,
+        \"publishers\": null,
+        \"authors\": null
+},
+      \"images\": [
+        {
+          \"url\": \"https://www.gannett-cdn.com/-mm-/05208a420be8c489fe9ef8bb2fd732a59d2a9bf9/c=0-98-1920-1183/local/-/media/2017/08/01/Camarillo/Camarillo/636372164530998287-avocado-1851422-1920.jpg?auto=webp&format=pjpg&width=1200\",
+          \"width\": 1200,
+          \"height\": 678,
+          \"title\": \"Coronavirus update: 16 new cases; more on outbreak at Santa Paula packing house\",
+          \"attribution\": null
+}
+],
+      \"locale\": \"en-us\",
+      \"categories\": [
+        \"news\"
+],
+      \"topics\": [
+        \"Coronavirus in US\",
+        \"Coronavirus\",
+        \"New Cases\"
+]
+},
+{
+      \"path\": \"_news/2020-05-15-trump-unveils-new-coronavirus-vaccine-effort-with-end-of-year-goal.md\",
+      \"title\": \"Trump unveils new coronavirus vaccine effort with end-of-year goal\",
+      \"excerpt\": \"Operation Warp Speed” hopes to develop and distribute a coronavirus vaccine by the end of 2020 — a goal that outpaces what most experts believe is possible. President Trump says the country will return to normal with or without one.\",
+      \"heat\": 105,
+      \"tags\": [
+        \"US\"
+],
+      \"type\": \"article\",
+      \"webUrl\": \"https://www.nbcnews.com/nightly-news/video/trump-unveils-new-coronavirus-vaccine-effort-with-end-of-year-goal-83525189578\",
+      \"ampWebUrl\": \"https://www.nbcnews.com/news/amp-video/mmvo83525189578\",
+      \"cdnAmpWebUrl\": \"https://www-nbcnews-com.cdn.ampproject.org/c/s/www.nbcnews.com/news/amp-video/mmvo83525189578\",
+      \"publishedDateTime\": \"2020-05-15T15:54:00-07:00\",
+      \"updatedDateTime\": null,
+      \"provider\": {
+        \"name\": \"NBC News\",
+        \"domain\": \"nbcnews.com\",
+        \"images\": null,
+        \"publishers\": null,
+        \"authors\": null
+},
+      \"images\": [
+        {
+          \"url\": \"https://media13.s-nbcnews.com/j/MSNBC/Components/Video/202005/nn_gbe_trump_latest_vaccine_timeline_200515_1920x1080.nbcnews-fp-1200-630.jpg\",
+          \"width\": 1200,
+          \"height\": 630,
+          \"title\": \"Trump unveils new coronavirus vaccine effort with end-of-year goal\",
+          \"attribution\": null
+}
+],
+      \"locale\": \"en-us\",
+      \"categories\": [
+        \"news\"
+],
+      \"topics\": [
+        \"Coronavirus in US\",
+        \"Coronavirus\"
+]
+},
+{
+      \"path\": \"_news/2020-05-15-3-new-covid-19-deaths-82-new-cases-reported-in-fresno-county.md\",
+      \"title\": \"3 new COVID-19 deaths, 82 new cases reported in Fresno County\",
+      \"excerpt\": \"Fresno County reported three new coronavirus deaths and 82 new cases, according to a Friday update from the Department of Public Health. It marks the highest\",
+      \"heat\": 160,
+      \"tags\": [
+        \"US\"
+],
+      \"type\": \"article\",
+      \"webUrl\": \"https://www.yourcentralvalley.com/life-health/health/coronavirus/3-new-covid-19-deaths-82-new-cases-reported-in-fresno-county/\",
+      \"ampWebUrl\": \"https://www.yourcentralvalley.com/life-health/health/coronavirus/3-new-covid-19-deaths-82-new-cases-reported-in-fresno-county/amp/\",
+      \"cdnAmpWebUrl\": \"https://www-yourcentralvalley-com.cdn.ampproject.org/c/s/www.yourcentralvalley.com/life-health/health/coronavirus/3-new-covid-19-deaths-82-new-cases-reported-in-fresno-county/amp/\",
+      \"publishedDateTime\": \"2020-05-15T15:34:00-07:00\",
+      \"updatedDateTime\": null,
+      \"provider\": {
+        \"name\": \"KSEE\",
+        \"domain\": \"yourcentralvalley.com\",
+        \"images\": null,
+        \"publishers\": null,
+        \"authors\": null
+},
+      \"images\": [
+        {
+          \"url\": \"https://www.yourcentralvalley.com/wp-content/uploads/sites/54/2020/04/Fresno-County.jpg?w=1280&h=720&crop=1\",
+          \"width\": 1280,
+          \"height\": 720,
+          \"title\": \"3 new COVID-19 deaths, 82 new cases reported in Fresno County\",
+          \"attribution\": null
+}
+],
+      \"locale\": \"en-us\",
+      \"categories\": [
+        \"news\"
+],
+      \"topics\": [
+        \"Coronavirus in US\",
+        \"Coronavirus\",
+        \"New Cases\"
+]
+},
+{
+      \"path\": \"_news/2020-05-15-oregon-reports-no-new-covid-19-deaths-64-new-cases-3-in-deschutes.md\",
+      \"title\": \"Oregon reports no new COVID-19 deaths; 64 new cases, 3 in Deschutes\",
+      \"excerpt\": \"The Oregon Health Authority reported no new deaths from COVID-19 on Friday, but also reported 63 new confirmed cases and a presumptive case, raising the tally to 3,541 cases and nearly 86,000 negative test results.\",
+      \"heat\": 130,
+      \"tags\": [
+        \"US\"
+],
+      \"type\": \"article\",
+      \"webUrl\": \"https://ktvz.com/news/coronavirus/2020/05/15/oregon-reports-no-new-covid-19-deaths-64-new-cases-3-in-deschutes/\",
+      \"ampWebUrl\": null,
+      \"cdnAmpWebUrl\": null,
+      \"publishedDateTime\": \"2020-05-15T14:00:00-07:00\",
+      \"updatedDateTime\": null,
+      \"provider\": {
+        \"name\": \"KTVZ\",
+        \"domain\": \"ktvz.com\",
+        \"images\": null,
+        \"publishers\": null,
+        \"authors\": null
+},
+      \"images\": [
+        {
+          \"url\": \"https://s3.us-east-1.wasabisys.com/ktvz.com/2020/03/Oregon-coronavirus-MGN-860x484.jpg\",
+          \"width\": 860,
+          \"height\": 484,
+          \"title\": \"Oregon reports no new COVID-19 deaths; 64 new cases, 3 in Deschutes\",
+          \"attribution\": null
+}
+],
+      \"locale\": \"en-us\",
+      \"categories\": [
+        \"news\"
+],
+      \"topics\": [
+        \"Coronavirus in US\",
+        \"Coronavirus\",
+        \"New Cases\"
+]
+},
+{
+      \"path\": \"_news/2020-05-15-stimulus-talks-how-democrats-republicans-trump-split-on-coronavirus-bill.md\",
+      \"title\": \"Stimulus Talks: How Democrats, Republicans, Trump Split on Coronavirus Bill\",
+      \"excerpt\": \"Here’s a breakdown of positions staked out so far by the Democrats, Republicans and the White House on the next coronavirus-relief bill.\",
+      \"heat\": 113,
+      \"tags\": [
+        \"US\"
+],
+      \"type\": \"article\",
+      \"webUrl\": \"https://www.wsj.com/articles/next-coronavirus-bill-democratic-republican-white-house-positions-11589564054\",
+      \"ampWebUrl\": \"https://www.wsj.com/amp/articles/next-coronavirus-bill-democratic-republican-white-house-positions-11589564054\",
+      \"cdnAmpWebUrl\": \"https://www-wsj-com.cdn.ampproject.org/c/s/www.wsj.com/amp/articles/next-coronavirus-bill-democratic-republican-white-house-positions-11589564054\",
+      \"publishedDateTime\": \"2020-05-15T13:52:00-07:00\",
+      \"updatedDateTime\": null,
+      \"provider\": {
+        \"name\": \"Wall Street Journal\",
+        \"domain\": \"wsj.com\",
+        \"images\": null,
+        \"publishers\": null,
+        \"authors\": null
+},
+      \"images\": [
+        {
+          \"url\": \"https://images.wsj.net/im-187513/social\",
+          \"width\": 1280,
+          \"height\": 640,
+          \"title\": \"Stimulus Talks: How Democrats, Republicans, Trump Split on Coronavirus Bill\",
+          \"attribution\": null
+}
+],
+      \"locale\": \"en-us\",
+      \"categories\": [
+        \"news\"
+],
+      \"topics\": [
+        \"Coronavirus in US\",
+        \"Coronavirus\",
+        \"Political Impact\"
+]
+},
+{
+      \"path\": \"_news/2020-05-15-trump-names-team-to-develop-coronavirus-vaccine-at-warp-speed.md\",
+      \"title\": \"Trump names team to develop coronavirus vaccine at ‘Warp Speed’\",
+      \"excerpt\": \"President Donald Trump formally announced the former head of vaccines at GlaxoSmithKline and a general in charge of Army readiness will lead the government’s effort to speed the development of potential coronavirus vaccines.\",
+      \"heat\": 105,
+      \"tags\": [
+        \"US\"
+],
+      \"type\": \"article\",
+      \"webUrl\": \"https://www.politico.com/news/2020/05/15/trump-coronavirus-vaccine-development-team-260678\",
+      \"ampWebUrl\": \"https://www.politico.com/amp/news/2020/05/15/trump-coronavirus-vaccine-development-team-260678\",      \"cdnAmpWebUrl\": \"https://www-politico-com.cdn.ampproject.org/c/s/www.politico.com/amp/news/2020/05/15/trump-coronavirus-vaccine-development-team-260678\",
+      \"publishedDateTime\": \"2020-05-15T10:34:00-07:00\",
+      \"updatedDateTime\": null,
+      \"provider\": {
+        \"name\": \"Politico\",
+        \"domain\": \"politico.com\",
+        \"images\": null,
+        \"publishers\": null,
+        \"authors\": null
+},
+      \"images\": [
+        {
+          \"url\": \"https://static.politico.com/82/ca/12b5707a4eb1b1c0a4b68404f544/200515-moncef-slaoui-ap-773.jpg\",
+          \"width\": 1160,
+          \"height\": 773,
+          \"title\": \"Trump names team to develop coronavirus vaccine at ‘Warp Speed’\",
+          \"attribution\": null
+}
+],
+      \"locale\": \"en-us\",
+      \"categories\": [
+        \"news\"
+],
+      \"topics\": [
+        \"Coronavirus in US\",
+        \"Coronavirus\"
+]
+},
+{
+      \"path\": \"_news/2020-05-15-golf-world-no-1-mcilroy-slams-trump-for-coronavirus-response.md\",
+      \"title\": \"Golf-World No. 1 McIlroy slams Trump for coronavirus response\",
+      \"excerpt\": \"Four-time major champion Rory McIlroy criticized U.S. President Donald Trump for his response to the coronavirus outbreak, and said it was unlikely the pair would meet for another round of golf.\",
+      \"heat\": 105,
+      \"tags\": [
+        \"US\"
+],
+      \"type\": \"article\",
+      \"webUrl\": \"https://www.reuters.com/article/us-health-coronavirus-golf-mcilroy-idUSKBN22R2OE\",
+      \"ampWebUrl\": \"https://mobile.reuters.com/article/amp/idUSKBN22R2OE\",
+      \"cdnAmpWebUrl\": \"https://mobile-reuters-com.cdn.ampproject.org/c/s/mobile.reuters.com/article/amp/idUSKBN22R2OE\",
+      \"publishedDateTime\": \"2020-05-15T09:50:00-07:00\",
+      \"updatedDateTime\": null,
+      \"provider\": {
+        \"name\": \"Reuters\",
+        \"domain\": \"reuters.com\",
+        \"images\": null,
+        \"publishers\": null,
+        \"authors\": null
+},
+      \"images\": [
+        {
+          \"url\": \"https://s4.reutersmedia.net/resources/r/?m=02&d=20200515&t=2&i=1518814382&w=&fh=545px&fw=&ll=&pl=&sq=&r=LYNXMPEG4E1NR\",
+          \"width\": 818,
+          \"height\": 545,
+          \"title\": \"Golf-World No. 1 McIlroy slams Trump for coronavirus response\",
+          \"attribution\": null
+}
+],
+      \"locale\": \"en-us\",
+      \"categories\": [
+        \"news\"
+],
+      \"topics\": [
+        \"Coronavirus in US\",
+        \"Coronavirus\"
+]
+}
+]
+}", "_responseType": "", "_sent": true, "_subscriptions": [], "_timedOut": false, "_trackingName": "unknown", "_url": "https: //api.smartable.ai/coronavirus/news/US", "readyState": 4, "responseHeaders": {"Accept-Ranges": "bytes", "Access-Control-Allow-Origin": "*", "Age": "46", "Cache-Control": "max-age=600", "Content-Type": "application/json; charset=utf-8", "Date": "Fri, 22 May 2020 13:08:35 GMT", "ETag": "W/\"5ec7c9a1-c061\"", "Expires": "Fri, 22 May 2020 12:59:26 GMT", "Last-Modified": "Fri, 22 May 2020 12:46:25 GMT", "Vary": "Accept-Encoding", "Via": "1.1 varnish", "X-Cache": "HIT", "X-Cache-Hits": "2", "X-Fastly-Request-ID": "b9da6dfd4c43b939b644abb88f0f91d4f5b81b7b", "X-GitHub-Request-Id": "785A:4072:1BD2A0:1FCD32:5EC7CA56", "X-Proxy-Cache": "MISS", "X-Served-By": "cache-pao17447-PAO", "X-Timer": "S1590152916.087138,VS0,VE0"}, "responseURL": "https://api.smartable.ai/coronavirus/news/US", "status": 200, "timeout": 0, "upload": {}, "withCredentials": true}, "status": 200, "statusText": undefined}

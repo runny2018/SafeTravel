@@ -6,54 +6,59 @@ import {
     View,
     Text,
     StatusBar,
+    FlatList
 } from 'react-native';
 
-import axios from 'axios';
+
+
+import { getNews } from '../components/news';
+
+import Article from '../components/Article';
 
 
 export default class NationalNews extends React.Component {
 
-    state = {
-        data: ''
+    constructor(props) {
+        super(props);
+        this.state = { articles: [], refreshing: true };
+        this.fetchNews = this.fetchNews.bind(this);
     }
 
+
     componentDidMount() {
-        axios.get('https://api.smartable.ai/coronavirus/news/:location', {
-            params: {
-                location: 'IN'   //it maybe just IN
-            },
-            headers: {
-                'Subscription-Key': '3009d4ccc29e4808af1ccc25c69b4d5d',
+        this.fetchNews();
+    }
 
-            },
-            method: 'get'
+    fetchNews() {
+        getNews()
+            .then(articles => this.setState({ articles, refreshing: false }))
+            .catch(() => this.setState({ refreshing: false }));
+    }
 
-        })
-            .then(function (response) {
-                // handle success
-                console.log(response);
-            })
-            .catch(function (error) {
-                // handle error
-                console.log(error);
-            })
-            .then(function () {
-                // always executed
-            });
+    handleRefresh() {
+        this.setState(
+            {
+                refreshing: true
+            },
+            () => this.fetchNews()
+        );
     }
 
 
     render() {
-
         return (
-            <View>
-                <Text></Text>
-            </View>
+            <FlatList
+                data={this.state.articles}
+                renderItem={({ item }) => <Article article={item} />}
+                keyExtractor={item => item.webUrl}
+                refreshing={this.state.refreshing}
+                onRefresh={this.handleRefresh.bind(this)}
+            />
         )
     }
-}
 
-{/*axios.get('https://api.smartable.ai/coronavirus/news/:location', {
+}
+/*axios.get('https://api.smartable.ai/coronavirus/news/:location', {
             params: {
                 location: "IN"   //it maybe just IN
             },
@@ -74,11 +79,11 @@ export default class NationalNews extends React.Component {
             })
             .then(function () {
                 // always executed
-            });*/}
+            });*/
 
 
 
-{/*fetch('http://api.smartable.ai/coronavirus/news/:location', {
+/*fetch('http://api.smartable.ai/coronavirus/news/:location', {
     method: 'GET',
     headers: {
         "Subscription-Key": "3009d4ccc29e4808af1ccc25c69b4d5d",
@@ -98,4 +103,4 @@ export default class NationalNews extends React.Component {
     })
     .catch((error) => {
         console.error(error);
-    });*/}
+    });*/
