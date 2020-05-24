@@ -16,12 +16,14 @@ import {
 import GetLocation from 'react-native-get-location'
 import Geocoder from 'react-native-geocoder';
 
+import Moment from 'moment';
+import { extendMoment } from 'moment-range';
+import LastUpdated from './LastUpdated';
+
+const moment = extendMoment(Moment);
+
 const axios = require('axios');
 
-const _fetchZone = () => {
-
-
-}
 
 export default class UserLocation extends React.Component {
     constructor(props) {
@@ -127,9 +129,7 @@ export default class UserLocation extends React.Component {
     UNSAFE_componentWillMount() {
         axios.get('https://api.covid19india.org/zones.json')
             .then(response => {
-
                 this.setState({ covidZones: response.data.zones })
-
             })
             .catch(error => {
                 // handle error
@@ -146,6 +146,7 @@ export default class UserLocation extends React.Component {
         const { location, loading } = this.state;
 
 
+
         return (
             <ScrollView>
                 <Button
@@ -159,6 +160,15 @@ export default class UserLocation extends React.Component {
                 {
                     this.state.covidZones ? this.state.covidZones.map((item) =>
                         this.state.userCity == item.district ? <Text>{item.zone}</Text> : null
+                    )
+                        :
+                        null
+                }
+
+
+                {
+                    this.state.covidZones ? this.state.covidZones.map((item) =>
+                        this.state.userCity == item.district ? <LastUpdated lastUpdatedDate={item.lastupdated} /> : null
                     )
                         :
                         null
