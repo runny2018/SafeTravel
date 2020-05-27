@@ -13,10 +13,10 @@ import {
 
 const axios = require('axios');
 
-import Article from '../components/Article';
+import DistrictNewsArticle from '../components/DistrictNewsArticle';
 
 
-export default class NationalNews extends React.Component {
+export default class DistrictNews extends React.Component {
 
     constructor(props) {
         super(props);
@@ -30,17 +30,14 @@ export default class NationalNews extends React.Component {
     }
 
     fetchNews() {
-        axios.get('https://api.smartable.ai/coronavirus/news/IN', {
-            headers: {
-                'Subscription-Key': '429058f92b3246ae9b8ad1cd88daee46',
-            },
+        axios.get('http://newsapi.org/v2/top-headlines?sources=google-news-in&apiKey=626621d22fef43e1a3ba45f0331e820b', {
             method: 'get'
         })
             .then(response => {
                 // handle success
                 this.setState({ articles: response.data.news, refreshing: false })
                 //res = response.data.news
-                //console.log(response.data.news)      //response.request._response
+                console.log(response.data)      //response.request._response
             })
             .catch(error => {
                 // handle error
@@ -68,7 +65,7 @@ export default class NationalNews extends React.Component {
             <View style={{ margin: 20 }}>
                 <FlatList
                     data={this.state.articles}
-                    renderItem={({ item }) => <Article article={item} />}
+                    renderItem={({ item }) => <DistrictNewsArticle article={item} />}
                     keyExtractor={item => item.title}
                     refreshing={this.state.refreshing}
                     onRefresh={this.handleRefresh.bind(this)}

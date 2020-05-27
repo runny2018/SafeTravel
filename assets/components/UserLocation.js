@@ -25,6 +25,7 @@ const moment = extendMoment(Moment);
 const axios = require('axios');
 
 import DistrictStats from './DistrictStats'
+import HelplineNumbers from './HelplineNumbers'
 
 
 export default class UserLocation extends React.Component {
@@ -37,7 +38,7 @@ export default class UserLocation extends React.Component {
             userLongitude: null,
 
             userCity: null,
-            //userState: null,
+            userState: null,
 
             covidZones: []
 
@@ -89,7 +90,7 @@ export default class UserLocation extends React.Component {
                             // res is an Array of geocoding object (see below)
 
                             this.setState({ userCity: res[0].locality })
-                            //this.setState({ userState: res[0].adminArea })
+                            this.setState({ userState: res[0].adminArea })
 
 
 
@@ -187,6 +188,8 @@ export default class UserLocation extends React.Component {
                         null
                 }
 
+
+                <HelplineNumbers state={this.state.userState} />
 
                 {/*{loading ? (
                     <ActivityIndicator />

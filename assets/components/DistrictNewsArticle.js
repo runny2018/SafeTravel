@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Linking, TouchableNativeFeedback, Text, TouchableOpacity, Image } from 'react-native';
 
 
-export default class Article extends React.Component {
+export default class DistrictNewsArticle extends React.Component {
     render() {
         const {
             title,

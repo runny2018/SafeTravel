@@ -8,12 +8,12 @@ export async function getNews() {
         },
         method: 'get'
     })
-        .then(function (response) {
+        .then(response => {
             // handle success
             res = response.data.news
             console.log(response.data.news)      //response.request._response
         })
-        .catch(function (error) {
+        .catch(error => {
             // handle error
             console.log(error);
 
@@ -22,6 +22,7 @@ export async function getNews() {
             // always executed
         });
 
+    console.log(res)
     return res
 
 
