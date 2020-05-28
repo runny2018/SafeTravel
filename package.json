@@ -28,6 +28,7 @@
     "react-native-htmlview": "^0.15.0",
     "react-native-permissions": "^2.1.4",
     "react-native-phone-call": "^1.0.9",
+    "react-native-plotly": "^4.0.0",
     "react-native-svg": "^12.1.0",
     "react-native-webview": "^10.1.1",
     "react-simple-maps": "^2.0.0",

@@ -1,60 +1,44 @@
-import React, { Component } from "react"
-import { scaleLinear } from "d3-scale"
-// If you want to use an object instead of requesting a file:
-import geographyObject from "./india.topo.json"
-
-import Svg, { Circle, Rect } from 'react-native-svg';
- 
-const colorScale = scaleLinear()
-  .domain([0, 100000000, 1338612970]) // Max is based on China
-    .range(["#FFF176", "#FFC107", "#E65100"])
-  
 import {
-    ComposableMap,
-    Geographies,
-    Geography,
-    ZoomableGroup
-} from "react-simple-maps"
+    ComposableMap, Geographies, Geography
+} from 'react-simple-maps';
 
+import React from 'react'
 
-import {
-    View
-} from 'react-native'
+import { View } from 'react-native'
 
- 
-class PlotlyGlobal extends Component {
-  render() {
-    return (
-      <View>
-        <ComposableMap style={{ width: "100%" }}>
-          <ZoomableGroup>
-                    <Geographies geography={"./datamaps.world.min.js"} disableOptimization>
-              {" "}
-              // if you are using the object, then geography={geographyObject}
-              {(geographies, projection) =>
-                geographies.map((geography, i) => (
-                  <Geography
-                    key={`geography-${i}`}
-                    cacheId={`geography-${i}`}
-                    geography={geography}
-                    projection={projection}
-                    style={{
-                      default: {
-                        fill: colorScale(geography.properties.pop_est),
-                        stroke: "#FFF",
-                        strokeWidth: 0.5,
-                        outline: "none",
-                      },
-                    }}
-                  />
-                ))
-              }
-            </Geographies>
-          </ZoomableGroup>
-        </ComposableMap>
-      </View>
-    )
-  }
+const INDIA_TOPO_JSON = require('./Indian_States.json');
+
+const PROJECTION_CONFIG = {
+    scale: 350,
+    center: [78.9629, 22.5937]
+};
+
+import { WebView } from 'react-native-webview';
+
+var data = [{
+    type: "choroplethmapbox", locations: ["NY", "MA", "VT"], z: [-50, -10, -20],
+    geojson: "https://raw.githubusercontent.com/python-visualization/folium/master/examples/data/us-states.json"
+}];
+
+export default class PlotlyGlobal extends React.Component {
+    render() {
+        return (
+            <View style={{
+                width: 400,
+                height: 200
+            }}>
+
+            </View>
+        )
+    }
+
 }
- 
-export default PlotlyGlobal
+
+
+
+{/*<WebView
+                    style={{
+                        width: 400,
+                        height: 200
+                    }}
+                source={{ uri: 'https://3586035908bc.ngrok.io/world' }} />*/}

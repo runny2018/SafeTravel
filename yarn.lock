@@ -6370,6 +6370,11 @@ react-native-phone-call@^1.0.9:
   resolved "https://registry.yarnpkg.com/react-native-phone-call/-/react-native-phone-call-1.0.9.tgz#4468ec6f95856557fbff9bd69a0db04b54c35e1d"
   integrity sha512-OPWYg8qeWNG/U4bWGMAKcQTH/ifqJnsvUPCH4lOkvWFHbQS3fbH5M8rFhXCzcfS0GVNzHhZX9ZByMM368TFAUQ==
 
+react-native-plotly@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/react-native-plotly/-/react-native-plotly-4.0.0.tgz#57050a6eb379375526a465da6f55cd99ef9a18d4"
+  integrity sha512-P0FdQ1JwqhxhbRAh36eBas5e8qpPfKOWpsG99ekePXBrkPSvm5i9UcRopKW5AkFifs0GstDOJsOxfKpsVj4Whw==
+
 react-native-ratings@^6.5.0:
   version "6.5.0"
   resolved "https://registry.yarnpkg.com/react-native-ratings/-/react-native-ratings-6.5.0.tgz#a1606ccba3c5b54eec8e6cfa4765a45cf0e4ab8d"
