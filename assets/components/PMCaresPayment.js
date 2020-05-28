@@ -11,8 +11,6 @@ import {
 } from 'react-native';
 
 
-
-
 export default class PMCaresPayment extends React.Component {
     render() {
         return (
