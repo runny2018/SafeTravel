@@ -91,7 +91,7 @@ export default class UserLocation extends React.Component {
 
                             this.setState({ userCity: res[0].locality })
                             this.setState({ userState: res[0].adminArea })
-
+                            console.log(res)
 
 
                         })
