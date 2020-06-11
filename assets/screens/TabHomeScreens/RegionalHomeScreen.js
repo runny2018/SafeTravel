@@ -20,6 +20,8 @@ import { render } from 'react-dom';
 
 var isHidden = true;
 
+import Draggable from 'react-native-draggable';
+import CardSlideAnimation from '../../components/CardSlideAnimation';
 
 const GLOBAL = require('../../GlobalConstants');
 
@@ -28,8 +30,7 @@ export default function RegionalHomeScreen() {
 
     //render() {
     return (
-        <ScrollView
-            showsVerticalScrollIndicator={false}
+        <View
             style={{
                 flex: 1,
 
@@ -46,11 +47,17 @@ export default function RegionalHomeScreen() {
 
             <GetZone />
             <DistrictStats />
-            <NearbyUsefulResources />
+
+
+            <CardSlideAnimation />
 
 
 
-        </ScrollView >
+
+
+
+
+        </View >
     )
     //}
 }

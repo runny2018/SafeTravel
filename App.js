@@ -38,6 +38,7 @@ import StateBarChart from './assets/components/StateBarChart';
 import NationalMaps from './assets/components/NationalMaps';
 import GlobalMaps from './assets/components/GlobalMaps';
 import NationalNews from './assets/components/NationalNews';
+import CardSlideAnimation from './assets/components/CardSlideAnimation';
 function MyTabs() {
   return (
     <Tab.Navigator
@@ -86,7 +87,7 @@ function MyTabs() {
       />
       <Tab.Screen
         name="National"
-        component={NationalHomeScreen}
+        component={CardSlideAnimation}
 
       />
       <Tab.Screen

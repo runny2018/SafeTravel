@@ -94,6 +94,7 @@ export default function NearbyUsefulResources() {
                 shadowRadius: 2.22,
 
                 elevation: 3,
+                backgroundColor: "white"
 
 
 

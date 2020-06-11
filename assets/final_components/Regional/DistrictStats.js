@@ -84,7 +84,8 @@ export default function DistrictStats() {
                     style={{
                         fontFamily: GLOBAL.FONT.MONT_MED,
                         fontSize: 12,
-                        alignSelf: "center"
+                        alignSelf: "center",
+                        translateY: 12
                     }}
                 >Con. Cases</Text>
 
@@ -124,7 +125,8 @@ export default function DistrictStats() {
                     style={{
                         fontFamily: GLOBAL.FONT.MONT_MED,
                         fontSize: 12,
-                        alignSelf: "center"
+                        alignSelf: "center",
+                        translateY: 12
                     }}
                 >Active Cases</Text>
             </View>
@@ -158,7 +160,8 @@ export default function DistrictStats() {
                     style={{
                         fontFamily: GLOBAL.FONT.MONT_MED,
                         fontSize: 12,
-                        alignSelf: "center"
+                        alignSelf: "center",
+                        translateY: 12
                     }}
                 >Recovered</Text>
             </View>
@@ -192,7 +195,8 @@ export default function DistrictStats() {
                     style={{
                         fontFamily: GLOBAL.FONT.MONT_MED,
                         fontSize: 12,
-                        alignSelf: "center"
+                        alignSelf: "center",
+                        translateY: 12
                     }}
                 >Deceased</Text>
             </View>
