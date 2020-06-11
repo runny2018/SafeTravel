@@ -8,7 +8,7 @@ import {
 
 export default function NationalHomeScreen() {
     return (
-        <View>
+        <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
             <Text>NationalHomeScreen</Text>
         </View>
     )

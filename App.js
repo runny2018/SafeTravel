@@ -3,10 +3,8 @@ import {
   View,
   Text,
   StyleSheet,
+  StatusBar
 } from 'react-native'
-
-import { NavigationContainer } from '@react-navigation/native';
-import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
 
 
 import RegionalHomeScreen from './assets/screens/TabHomeScreens/RegionalHomeScreen';
@@ -21,16 +19,34 @@ import National from './assets/icons/BottomTabIcons/national.svg'
 import NationalSelected from './assets/icons/BottomTabIcons/national_selected.svg'
 
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { createStackNavigator } from '@react-navigation/stack';
+import { NavigationContainer } from '@react-navigation/native';
+import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
+import RandomScreen from './assets/screens/RandomScreen';
 
-const Tab = createBottomTabNavigator();
 
+const Tab = createMaterialBottomTabNavigator();
+
+
+const GLOBAL = require('./assets/GlobalConstants');
+
+
+import Bell from './assets/icons/Regional/bell.svg'
+import SettingsGear from './assets/icons/Regional/settings_gear.svg'
+import NearbyEssentials from './assets/components/NearbyEssentials';
+import StateBarChart from './assets/components/StateBarChart';
+import NationalMaps from './assets/components/NationalMaps';
+import GlobalMaps from './assets/components/GlobalMaps';
+import NationalNews from './assets/components/NationalNews';
 function MyTabs() {
   return (
     <Tab.Navigator
       initialRouteName="Regional"
-      activeColor="#e91e63"
+
+      activeColor="white"
       labelStyle={{ fontSize: 12 }}
-      style={{ backgroundColor: 'tomato' }}
+      style={{ backgroundColor: 'white' }}
+      barStyle={{ backgroundColor: GLOBAL.COLOR.TURQ }}
       screenOptions={({ route }) => ({
         tabBarIcon: ({ focused, color, size }) => {
 
@@ -46,17 +62,17 @@ function MyTabs() {
           }
 
           if (number == "11") {
-            return <RegionalSelected width={30} height={30} />
+            return <RegionalSelected width={25} height={25} />
           } else if (number == "10") {
-            return <Regional width={30} height={30} />
+            return <Regional width={25} height={25} />
           } else if (number == "21") {
-            return <NationalSelected width={30} height={30} />
+            return <NationalSelected width={25} height={25} />
           } else if (number == "20") {
-            return <National width={30} height={30} />
+            return <National width={25} height={25} />
           } else if (number == "31") {
-            return <GlobalSelected width={30} height={30} />
+            return <GlobalSelected width={25} height={25} />
           } else if (number == "30") {
-            return <Global width={30} height={30} />
+            return <Global width={25} height={25} />
           }
 
 
@@ -75,25 +91,140 @@ function MyTabs() {
       />
       <Tab.Screen
         name="Global"
-        component={GlobalHomeScreen}
+        component={GlobalMaps}
 
       />
     </Tab.Navigator>
   );
 }
 
-export default function App() {
+const RegionalStack = createStackNavigator()
+
+function RegionalStackCall() {
   return (
-    <NavigationContainer>
-      <MyTabs />
-    </NavigationContainer>
+    <RegionalStack.Navigator>
+      <RegionalStack.Screen
+        name="RegionalHome"
+        component={MyTabs}
+
+
+        options={{
+          title: 'Regional Updates',
+          headerStyle: {
+            backgroundColor: GLOBAL.COLOR.TURQ,
+          },
+          headerTintColor: 'white',
+          headerTitleStyle: {
+            //fontWeight: 'bold',
+            fontFamily: GLOBAL.FONT.MONT_BOLD
+          },
+          headerRight: () => (
+            <View style={{
+              flexDirection: "row",
+              marginRight: 20,
+              //backgroundColor: "red"
+            }}>
+              <Bell
+                width={22}
+                height={22}
+                style={{
+                  marginRight: 16
+                }}
+              />
+              <SettingsGear
+                width={24}
+                height={24}
+              />
+            </View>
+          )
+        }}
+
+      />
+      <RegionalStack.Screen
+        name="Essentials"
+        component={NearbyEssentials}
+
+
+        options={{
+          title: 'Essentials',
+          headerStyle: {
+            backgroundColor: GLOBAL.COLOR.TURQ,
+          },
+          headerTintColor: 'white',
+          headerTitleStyle: {
+            //fontWeight: 'bold',
+            fontFamily: GLOBAL.FONT.MONT_BOLD
+          },
+
+        }}
+
+      />
+    </RegionalStack.Navigator>
   );
 }
 
 
 
-{/*let number;
 
+const navigationRef = React.createRef();
+
+function navigate(name, params) {
+  navigationRef.current && navigationRef.current.navigate(name, params);
+}
+
+export default function App() {
+  return (
+    <NavigationContainer>
+      <StatusBar barStyle="light-content" backgroundColor={GLOBAL.COLOR.TURQ} />
+      <RegionalStackCall />
+      {/*<RegionalStack.Navigator initialRouteName="Regional Updates" ref={navigationRef}>
+        <RegionalStack.Screen
+          name="Regional Updates"
+          component={MyTabs}
+          options={{
+            title: 'Regional Updates',
+            headerStyle: {
+              backgroundColor: GLOBAL.COLOR.TURQ,
+            },
+            headerTintColor: 'white',
+            headerTitleStyle: {
+              //fontWeight: 'bold',
+              fontFamily: GLOBAL.FONT.MONT_BOLD
+            },
+            headerRight: () => (
+              <View style={{
+                flexDirection: "row",
+                marginRight: 20,
+                //backgroundColor: "red"
+              }}>
+                <Bell
+                  width={22}
+                  height={22}
+                  style={{
+                    marginRight: 16
+                  }}
+                />
+                <SettingsGear
+                  width={24}
+                  height={24}
+                />
+              </View>
+            )
+          }}
+        />
+        <RegionalStack.Screen name="Random" component={RandomScreen} />
+        <RegionalStack.Screen name="Essentials" component={NearbyEssentials} />
+        </RegionalStack.Navigator>*/}
+    </NavigationContainer >
+  );
+}
+
+
+
+{
+
+  /*let number;
+ 
           if (route.name === "Regional") {
             number = focused ? "11" : "10"
             //console.log(focused)
@@ -102,7 +233,7 @@ export default function App() {
           } else if (route.name === 'Global') {
             number = focused ? "31" : "30"
           }
-
+ 
           if (number == "11") {
             return <RegionalSelected width={30} height={30} />
           } else if (number == "10") {
@@ -116,8 +247,10 @@ export default function App() {
           } else if (number == "30") {
             return <Global width={30} height={30} />
           }
+ 
+        */
 
-        */}
+}
 
 
 

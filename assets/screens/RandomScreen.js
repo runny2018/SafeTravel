@@ -6,10 +6,10 @@ import {
 } from 'react-native'
 
 
-export default function GlobalHomeScreen() {
+export default function RandomScreen() {
     return (
         <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-            <Text>GlobalHomeScreen</Text>
+            <Text>Hey there! I am a random screen.</Text>
         </View>
     )
 

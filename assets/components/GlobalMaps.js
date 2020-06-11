@@ -14,15 +14,15 @@ const axios = require('axios');
 import { SliderBox } from "react-native-image-slider-box";
 
 
-export default class NationalMaps extends React.Component {
+export default class GlobalMaps extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
             images: [
-                "http://100.25.143.193/statsheatmaps_Active",
-                "http://100.25.143.193/statsheatmaps_Confirmed",
-                "http://100.25.143.193/statsheatmaps_Recovered",
-                "http://100.25.143.193/statsheatmaps_Deaths", // Network image
+                "http://100.25.143.193/statsheatmaps_Active_w",
+                "http://100.25.143.193/statsheatmaps_Confirmed_w",
+                "http://100.25.143.193/statsheatmaps_Recovered_w",
+                "http://100.25.143.193/statsheatmaps_Deaths_w", // Network image
             ]
         }
     }
@@ -35,8 +35,7 @@ export default class NationalMaps extends React.Component {
                 <SliderBox
                     images={this.state.images}
                     style={{
-                        height: "100%",
-                        width: "100%"
+                        height: "100%"
                     }}
                 />
             </View>

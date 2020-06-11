@@ -14,7 +14,17 @@ import java.util.List;
 
 import com.devfd.RNGeocoder.RNGeocoderPackage;
 
+// "com.doingmything" should be your app package name
+import com.safetravel_100.generated.BasePackageList;
+import org.unimodules.adapters.react.ModuleRegistryAdapter;
+import org.unimodules.adapters.react.ReactModuleRegistryProvider;
+import org.unimodules.core.interfaces.SingletonModule;
+import java.util.Arrays;
+
 public class MainApplication extends Application implements ReactApplication {
+  // check this in unimodules
+  private final ReactModuleRegistryProvider mModuleRegistryProvider = new ReactModuleRegistryProvider(
+      new BasePackageList().getPackageList(), null);
 
   private final ReactNativeHost mReactNativeHost = new ReactNativeHost(this) {
 
@@ -31,6 +41,10 @@ public class MainApplication extends Application implements ReactApplication {
       // example:
       // packages.add(new MyReactNativePackage());
       // packages.add(new RNGeocoderPackage());
+
+      List<ReactPackage> unimodules = Arrays.<ReactPackage>asList(new ModuleRegistryAdapter(mModuleRegistryProvider));
+      packages.addAll(unimodules);
+
       return packages;
     }
 

@@ -51,7 +51,7 @@ const keys = ['apples', 'bananas', 'cherries', 'dates']
 //yaxis stuff
 const contentInset = { top: 20, bottom: 20 }
 
-class StackedBarChartWithOnPressExample extends React.PureComponent {
+class StateBarChart extends React.PureComponent {
     render() {
         return (
             <View
@@ -59,17 +59,7 @@ class StackedBarChartWithOnPressExample extends React.PureComponent {
                     flexDirection: "row"
                 }}
             >
-                <YAxis
-                    data={data}
-                    contentInset={contentInset}
-                    svg={{
-                        fill: 'grey',
-                        fontSize: 10,
-                    }}
-                    //numberOfTicks={4}
-                    formatLabel={value => data[index].label}
 
-                />
                 <StackedBarChart
                     style={{ height: 200, width: "80%" }}
                     keys={keys}
@@ -87,7 +77,7 @@ class StackedBarChartWithOnPressExample extends React.PureComponent {
     }
 }
 
-export default StackedBarChartWithOnPressExample
+export default StateBarChart
 
 
 

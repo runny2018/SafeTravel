@@ -15,7 +15,7 @@ import NearbyEssentialsCard from '../components/NearbyEssentialsCard'
 import { ScrollView } from 'react-native-gesture-handler';
 
 
-export default class Playground extends React.Component {
+export default class NearbyEssentials extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -47,15 +47,10 @@ export default class Playground extends React.Component {
             <ScrollView
 
             >
-                <Text
-                    style={{
-                        fontSize: 20,
-                        margin: 20
-                    }}
-                >Nearby Essentials:</Text>
+
                 <View
                     style={{
-                        margin: 20
+                        margin: 10
                     }}
                 >
                     {
