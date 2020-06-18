@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Linking, TouchableNativeFeedback, Text, TouchableOpacity, Image } from 'react-native';
 
 
-export default class Article extends React.Component {
+export default class NationalNewsArticle extends React.Component {
     render() {
         const {
             title,
@@ -12,10 +12,7 @@ export default class Article extends React.Component {
 
 
 
-
-
         return (
-
             <View
                 style={{
                     borderWidth: 2,
@@ -35,7 +32,7 @@ export default class Article extends React.Component {
                     /> :
                         <Image
                             style={{ height: 100, width: "95%", borderRadius: 12, margin: 8 }}
-                            source={require('../images/dummy_newsarticle.jpg')}
+                            source={require('../../images/dummy_newsarticle.jpg')}
                         />
                 }
 

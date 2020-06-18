@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "932526353747",
+    "firebase_url": "https://the-covid-project-5bb93.firebaseio.com",
+    "project_id": "the-covid-project-5bb93",
+    "storage_bucket": "the-covid-project-5bb93.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:932526353747:android:8b1da84a2c37689e2385a6",
+        "android_client_info": {
+          "package_name": "com.safetravel_100"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "932526353747-6it83694j1j601m9m9tfmd6vcqlp0g08.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.safetravel_100",
+            "certificate_hash": "2be76b4327f3d121fd552d7a2b6a2088adcb0443"
+          }
+        },
+        {
+          "client_id": "932526353747-o7j7gqv6sece9necofqag0u5rgi5ma4t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8GyE4h5JxSqDnF4wvF-gsylSK6czL5sw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "932526353747-o7j7gqv6sece9necofqag0u5rgi5ma4t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

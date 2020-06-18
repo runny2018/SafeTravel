@@ -24,7 +24,7 @@ const moment = extendMoment(Moment);
 
 const axios = require('axios');
 
-import DistrictStats from './DistrictStats'
+//import DistrictStats from './DistrictStats'
 import HelplineNumbers from './HelplineNumbers'
 
 
@@ -52,7 +52,7 @@ export default class UserLocation extends React.Component {
 
 
 
-    async  _requestLocation() {
+    async _requestLocation() {
         try {
 
             const granted_one = PermissionsAndroid.request(
@@ -180,13 +180,13 @@ export default class UserLocation extends React.Component {
                         null
                 }
 
-                {
+                {/*{
                     this.state.covidZones ? this.state.covidZones.map((item) =>
                         this.state.userCity == item.district ? <DistrictStats district={item.district} state={item.state} /> : null
                     )
                         :
                         null
-                }
+                }*/}
 
 
                 <HelplineNumbers state={this.state.userState} />

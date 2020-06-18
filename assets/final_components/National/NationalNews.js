@@ -13,7 +13,8 @@ import {
 
 const axios = require('axios');
 
-import Article from '../components/Article';
+import NationalNewsArticle from './NationalNews_Article';
+import CardContentNational from './CardContent_National';
 
 
 export default class NationalNews extends React.Component {
@@ -67,12 +68,17 @@ export default class NationalNews extends React.Component {
         return (
             <View style={{ margin: 20 }}>
                 <FlatList
+                    ListHeaderComponent={CardContentNational}
+                    style={{
+                        height: 400
+                    }}
                     data={this.state.articles}
-                    renderItem={({ item }) => <Article article={item} />}
+                    renderItem={({ item }) => <NationalNewsArticle article={item} />}
                     keyExtractor={item => item.title}
                     refreshing={this.state.refreshing}
                     onRefresh={this.handleRefresh.bind(this)}
-                    showsVerticalScrollIndicator={false}
+                //showsVerticalScrollIndicator={false}
+                //scrollEnabled={false}
                 />
             </View>
 

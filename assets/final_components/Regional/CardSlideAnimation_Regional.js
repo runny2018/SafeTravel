@@ -1,8 +1,8 @@
 import React, { useRef } from "react";
 import { Animated, View, StyleSheet, PanResponder, Text } from "react-native";
-import NearbyUsefulResources from "../final_components/Regional/NearbyUsefulResources";
+import NearbyUsefulResources from "./NearbyUsefulResources";
 
-export default function CardSlideAnimation() {
+export default function CardSlideAnimationRegional() {
 
     const pan = useRef(new Animated.ValueXY()).current;
 

@@ -21,6 +21,10 @@ import org.unimodules.adapters.react.ReactModuleRegistryProvider;
 import org.unimodules.core.interfaces.SingletonModule;
 import java.util.Arrays;
 
+//Notifications
+
+import com.dieam.reactnativepushnotification.ReactNativePushNotificationPackage;
+
 public class MainApplication extends Application implements ReactApplication {
   // check this in unimodules
   private final ReactModuleRegistryProvider mModuleRegistryProvider = new ReactModuleRegistryProvider(
@@ -40,7 +44,8 @@ public class MainApplication extends Application implements ReactApplication {
       // Packages that cannot be autolinked yet can be added manually here, for
       // example:
       // packages.add(new MyReactNativePackage());
-      // packages.add(new RNGeocoderPackage());
+      // packages.add(new RNGeocoderPackage())
+      // packages.add(new ReactNativePushNotificationPackage());
 
       List<ReactPackage> unimodules = Arrays.<ReactPackage>asList(new ModuleRegistryAdapter(mModuleRegistryProvider));
       packages.addAll(unimodules);

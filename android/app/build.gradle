@@ -3,6 +3,7 @@ apply plugin: "com.android.application"
 import com.android.build.OutputFile
 
 apply from: '../../node_modules/react-native-unimodules/gradle.groovy'
+apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
 
 /**
  * The react.gradle file registers a task for each build variant (e.g. bundleDebugJsAndAssets
@@ -206,6 +207,12 @@ dependencies {
 
     //react-native-unimodules
     addUnimodulesDependencies()
+    //Notifications
+    //implementation project(':react-native-notifications')
+    //implementation 'com.google.firebase:firebase-core:16.0.0'
+
+    implementation project(':react-native-push-notification')
+    //implementation "com.google.firebase:firebase-messaging:17.6.0" may or may not require
     
     
     debugImplementation("com.facebook.flipper:flipper:${FLIPPER_VERSION}") {
@@ -236,6 +243,9 @@ task copyDownloadableDepsToLibs(type: Copy) {
     into 'libs'
 }
 
-apply from: file("../../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesAppBuildGradle(project)
+apply from: file("../../node_modules/@react-native-community/cli-platform-android/native_modules.gradle");
+applyNativeModulesAppBuildGradle(project)
+
+//apply plugin: 'com.google.gms.google-services'
 
 

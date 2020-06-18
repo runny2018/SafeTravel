@@ -1,8 +1,10 @@
 import React, { useRef } from "react";
 import { Animated, View, StyleSheet, PanResponder, Text } from "react-native";
-import NearbyUsefulResources from "../final_components/Regional/NearbyUsefulResources";
 
-export default function CardSlideAnimation() {
+import CardContentGlobal from "./CardContent_Global";
+import NationalNews from "../National/NationalNews";
+
+export default function CardSlideAnimationGlobal() {
 
     const pan = useRef(new Animated.ValueXY()).current;
 
@@ -28,17 +30,16 @@ export default function CardSlideAnimation() {
         })
     ).current;
 
+
     return (
         <View>
             <Animated.View
                 style={{
-                    transform: [{ translateY: pan.y }]
-
+                    transform: [{ translateY: pan.y }],
                 }}
                 {...panResponder.panHandlers}
             >
-                <NearbyUsefulResources />
-
+                <CardContentGlobal />
             </Animated.View>
         </View >
     );

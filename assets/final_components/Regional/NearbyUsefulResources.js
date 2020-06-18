@@ -96,8 +96,6 @@ export default function NearbyUsefulResources() {
                 elevation: 3,
                 backgroundColor: "white"
 
-
-
             }}
         >
 
